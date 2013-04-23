@@ -20,7 +20,6 @@
 // Make an NSError from a given NSException.
 - (NSError *)errorFromNSException:(NSException *)exception;
 
-// asynchronously invoke the given blocks,
 - (RACSignal *)signalWithBoolBlock:(BOOL (^)())block;
 
 - (RACSignal *)signalWithIdBlock:(id (^)())block;

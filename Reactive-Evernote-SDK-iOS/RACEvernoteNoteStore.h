@@ -41,9 +41,6 @@
 ///---------------------------------------------------------------------------------------
 
 /** Asks the NoteStore to provide information about the status of the user account corresponding to the provided authentication token.
-
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getSyncState;
 
@@ -56,9 +53,6 @@
  @param  maxEntries The maximum number of modified objects that should be returned in the result SyncChunk. This can be used to limit the size of each individual message to be friendly for network transfer. Applications should not request more than 256 objects at a time, and must handle the case where the service returns less than the requested number of objects in a given request even though more objects are available on the service.
 
  @param  fullSyncOnly If true, then the client only wants initial data for a full sync. In this case, the service will not return any expunged objects, and will not return any Resources, since these are also provided in their corresponding Notes.
-
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getSyncChunkAfterUSN:(int32_t)afterUSN maxEntries:(int32_t)maxEntries fullSyncOnly:(BOOL)fullSyncOnly;
 
@@ -71,9 +65,6 @@
  @param  maxEntries The maximum number of modified objects that should be returned in the result SyncChunk. This can be used to limit the size of each individual message to be friendly for network transfer.
 
  @param  filter The caller must set some of the flags in this structure to specify which data types should be returned during the synchronization. See the SyncChunkFilter structure for information on each flag.
-
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getFilteredSyncChunkAfterUSN:(int32_t)afterUSN maxEntries:(int32_t)maxEntries
                                      filter:(EDAMSyncChunkFilter *)filter;
@@ -84,9 +75,6 @@
  This function must be called on the shard that owns the referenced notebook. (I.e. the shardId in /shard/shardId/edam/note must be the same as LinkedNotebook.shardId.)
 
  @param  linkedNotebook This structure should contain identifying information and permissions to access the notebook in question.
-
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getLinkedNotebookSyncState:(EDAMLinkedNotebook *)linkedNotebook;
 
@@ -102,9 +90,6 @@
  @param  maxEntries The maximum number of modified objects that should be returned in the result SyncChunk. This can be used to limit the size of each individual message to be friendly for network transfer. Applications should not request more than 256 objects at a time, and must handle the case where the service returns less than the requested number of objects in a given request even though more objects are available on the service.
 
  @param  fullSyncOnly If true, then the client only wants initial data for a full sync. In this case, the service will not return any expunged objects, and will not return any Resources, since these are also provided in their corresponding Notes.
-
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getLinkedNotebookSyncChunk:(EDAMLinkedNotebook *)linkedNotebook afterUSN:(int32_t)afterUSN
                                maxEntries:(int32_t)maxEntries fullSyncOnly:(BOOL)fullSyncOnly;
@@ -115,23 +100,17 @@
 
 /** Returns a list of all of the notebooks in the account.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listNotebooks;
 
 /** Returns the current state of the notebook with the provided GUID. The notebook may be active or deleted (but not expunged).
 
  @param  guid The GUID of the notebook to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNotebookWithGuid:(EDAMGuid)guid;
 
 /** Returns the notebook that should be used to store new notes in the user's account when no other notebooks are specified.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getDefaultNotebook;
 
@@ -147,16 +126,12 @@
 /** Submits notebook changes to the service. The provided data must include the notebook's guid field for identification.
 
  @param  notebook The notebook object containing the requested changes.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateNotebook:(EDAMNotebook *)notebook;
 
 /** Permanently removes the notebook from the user's account. After this action, the notebook is no longer available for undeletion, etc. If the notebook contains any Notes, they will be moved to the current default notebook and moved into the trash (i.e. Note.active=false).
 
  @param  guid The GUID of the notebook to delete.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeNotebookWithGuid:(EDAMGuid)guid;
 
@@ -166,16 +141,12 @@
 
 /** Returns a list of the tags in the account. Evernote does not support the undeletion of tags, so this will only include active tags.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listTags;
 
 /** Returns a list of the tags that are applied to at least one note within the provided notebook. If the notebook is public, the authenticationToken may be ignored.
 
  @param  guid the GUID of the notebook to use to find tags
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listTagsByNotebookWithGuid:(EDAMGuid)guid;
 
@@ -183,24 +154,18 @@
 /** Asks the service to make a tag with a set of information.
 
  @param  guid The GUID of the tag to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getTagWithGuid:(EDAMGuid)guid;
 
 /** Asks the service to make a tag with a set of information.
 
  @param  tag The desired list of fields for the tag are specified in this object. The caller must specify the tag name, and may provide the parentGUID.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)createTag:(EDAMTag *)tag;
 
 /** Submits tag changes to the service. The provided data must include the tag's guid field for identification. The service will apply updates to the following tag fields: name, parentGuid
 
  @param  tag The tag object containing the requested changes.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateTag:(EDAMTag *)tag;
 
@@ -209,8 +174,6 @@
  This function is not indended for use by full synchronizing clients, since it does not provide enough result information to the client to reconcile the local state without performing a follow-up sync from the service. This is intended for "thin clients" that need to efficiently support this as a UI operation.
 
  @param  guid The GUID of the tag to remove from all notes.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)untagAllWithGuid:(EDAMGuid)guid;
 
@@ -219,8 +182,6 @@
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
  @param  guid The GUID of the tag to delete.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeTagWithGuid:(EDAMGuid)guid;
 ///---------------------------------------------------------------------------------------
@@ -229,32 +190,24 @@
 
 /** Returns a list of the searches in the account. Evernote does not support the undeletion of searches, so this will only include active searches.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listSearches;
 
 /** Returns the current state of the search with the provided GUID.
 
  @param  guid The GUID of the search to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getSearchWithGuid:(EDAMGuid)guid;
 
 /** Asks the service to make a saved search with a set of information.
 
  @param  search The desired list of fields for the search are specified in this object. The caller must specify the name, query, and format of the search.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)createSearch:(EDAMSavedSearch *)search;
 
 /** Submits search changes to the service. The provided data must include the search's guid field for identification. The service will apply updates to the following search fields: name, query, and format.
 
  @param  search The search object containing the requested changes.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateSearch:(EDAMSavedSearch *)search;
 
@@ -263,8 +216,6 @@
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
  @param  guid The GUID of the search to delete.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeSearchWithGuid:(EDAMGuid)guid;
 ///---------------------------------------------------------------------------------------
@@ -275,8 +226,6 @@
 
  @param  query The information about which we are finding related entities.
  @param  resultSpec Allows the client to indicate the type and quantity of information to be returned, allowing a saving of time and bandwidth.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)findRealtedWithQuery:(EDAMRelatedQuery *)query resultSpec:(EDAMRelatedResultSpec *)resultSpec;
 
@@ -289,8 +238,6 @@
  @param  offset The numeric index of the first note to show within the sorted results. The numbering scheme starts with "0". This can be used for pagination.
 
  @param  maxNotes The most notes to return in this query. The service will return a set of notes that is no larger than this number, but may return fewer notes if needed. The NoteList.totalNotes field in the return value will indicate whether there are more values available after the returned set.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)findNotesWithFilter:(EDAMNoteFilter *)filter offset:(int32_t)offset maxNotes:(int32_t)maxNotes;
 
@@ -302,8 +249,6 @@
 
  @param  guid The GUID of the note to be retrieved.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)findNoteOffsetWithFilter:(EDAMNoteFilter *)filter guid:(EDAMGuid)guid;
 
@@ -319,8 +264,6 @@
 
  @param  resultSpec This specifies which information should be returned for each matching Note. The fields on this structure can be used to eliminate data that the client doesn't need, which will reduce the time and bandwidth to receive and process the reply.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)findNotesMetadataWithFilter:(EDAMNoteFilter *)filter offset:(int32_t)offset maxNotes:(int32_t)maxNotes
                                 resultSpec:(EDAMNotesMetadataResultSpec *)resultSpec;
@@ -333,8 +276,6 @@
 
  @param  withTrash If true, then the NoteCollectionCounts.trashCount will be calculated and supplied in the reply. Otherwise, the trash value will be omitted.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)findNoteCountsWithFilter:(EDAMNoteFilter *)filter withTrash:(BOOL)withTrash;
 
@@ -351,8 +292,6 @@
  @param  withResourcesRecognition If true, any Resource elements will include the binary contents of the 'recognition' field's body if recognition data is present.
 
  @param  withResourcesAlternateData If true, any Resource elements in this Note will include the binary contents of their 'alternateData' fields' body, if an alternate form is present.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteWithGuid:(EDAMGuid)guid withContent:(BOOL)withContent withResourcesData:(BOOL)withResourcesData
       withResourcesRecognition:(BOOL)withResourcesRecognition
@@ -363,8 +302,6 @@
  If there are no applicationData entries, then a LazyMap with an empty fullMap will be returned. If your application only needs to fetch its own applicationData entry, use getNoteApplicationDataEntry instead.
 
  @param  guid The GUID of the note who's application data is to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteApplicationDataWithGuid:(EDAMGuid)guid;
 
@@ -372,8 +309,6 @@
 
  @param  guid The GUID of the note
  @param key The key in the dictionary
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteApplicationDataEntryWithGuid:(EDAMGuid)guid key:(NSString *)key;
 
@@ -382,8 +317,6 @@
  @param  guid The GUID of the note
  @param key The key in the dictionary
  @param value The value in the dictionary
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)setNoteApplicationDataEntryWithGuid:(EDAMGuid)guid key:(NSString *)key value:(NSString *)value;
 
@@ -391,16 +324,12 @@
 
  @param  guid The GUID of the note
  @param key key from applicationData map
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)unsetNoteApplicationDataEntryWithGuid:(EDAMGuid)guid key:(NSString *)key;
 
 /** Returns XHTML contents of the note with the provided GUID. If the Note is found in a public notebook, the authenticationToken will be ignored (so it could be an empty string).
 
  @param  guid The GUID of the note to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteContentWithGuid:(EDAMGuid)guid;
 
@@ -413,8 +342,6 @@
  @param  noteOnly If true, this will only return the text extracted from the ENML contents of the note itself. If false, this will also include the extracted text from any text-bearing resources (PDF, recognized images)
 
  @param  tokenizeForIndexing If true, this will break the text into cleanly separated and sanitized tokens. If false, this will return the more raw text extraction, with its original punctuation, capitalization, spacing, etc. @param success Success completion block.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteSearchTextWithGuid:(EDAMGuid)guid noteOnly:(BOOL)noteOnly
                      tokenizeForIndexing:(BOOL)tokenizeForIndexing;
@@ -424,8 +351,6 @@
  This text can be indexed for search purposes by a light client that doesn't have capability to extract all of the searchable text content from a resource. If the Resource is found in a public notebook, the authenticationToken will be ignored (so it could be an empty string).
 
  @param  guid The GUID of the resource to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceSearchTextWithGuid:(EDAMGuid)guid;
 
@@ -434,16 +359,12 @@
  This can be used with authentication to get the tags for a user's own note, or can be used without valid authentication to retrieve the names of the tags for a note in a public notebook.
 
  @param  guid The GUID of the note.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteTagNamesWithGuid:(EDAMGuid)guid;
 
 /** Asks the service to make a note with the provided set of information.
 
  @param  note A Note object containing the desired fields to be populated on the service.
- @param success Success completion block.
- @param failure Failure completion block.
  @exception EDAMUserException Thrown if the note is not valid.
  @exception EDAMNotFoundException If the note is not found by GUID
  */
@@ -454,8 +375,6 @@
  The provided data must include the note's guid field for identification. The note's title must also be set.
 
  @param  note A Note object containing the desired fields to be populated on the service. With the exception of the note's title and guid, fields that are not being changed do not need to be set. If the content is not being modified, note.content should be left unset. If the list of resources is not being modified, note.resources should be left unset.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateNote:(EDAMNote *)note;
 
@@ -464,8 +383,6 @@
  This is equivalent to calling updateNote() after setting Note.active = false
 
  @param  guid The GUID of the note to delete.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)deleteNoteWithGuid:(EDAMGuid)guid;
 
@@ -474,8 +391,6 @@
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
  @param  guid The GUID of the note to delete.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeNoteWithGuid:(EDAMGuid)guid;
 
@@ -486,8 +401,6 @@
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
  @param  guids The list of GUIDs for the Notes to remove.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeNotesWithGuids:(NSMutableArray *)guids;
 
@@ -497,8 +410,6 @@
 
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeInactiveNote;
 
@@ -509,8 +420,6 @@
  @param  guid The GUID of the Note to copy.
 
  @param  toNotebookGuid The GUID of the Notebook that should receive the new Note.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)copyNoteWithGuid:(EDAMGuid)guid toNoteBookGuid:(EDAMGuid)toNotebookGuid;
 
@@ -519,8 +428,6 @@
  These prior versions are stored to provide a recovery from unintentional removal of content from a note. The identifiers that are returned by this call can be used with getNoteVersion to retrieve the previous note. The identifiers will be listed from the most recent versions to the oldest.
 
  @param  guid The GUID of the Note.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listNoteVersionsWithGuid:(EDAMGuid)guid;
 
@@ -537,8 +444,6 @@
  @param  withResourcesRecognition If true, any Resource elements will include the binary contents of the 'recognition' field's body if recognition data is present.
 
  @param  withResourcesAlternateData If true, any Resource elements in this Note will include the binary contents of their 'alternateData' fields' body, if an alternate form is present.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteVersionWithGuid:(EDAMGuid)guid updateSequenceNum:(int32_t)updateSequenceNum
                     withResourcesData:(BOOL)withResourcesData withResourcesRecognition:(BOOL)withResourcesRecognition
@@ -560,8 +465,6 @@
  @param  withAttributes If true, the Resource will include the attributes
 
  @param  withAlternateData If true, the Resource will include the binary contents of the 'alternateData' field's body, if an alternate form is present.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceWithGuid:(EDAMGuid)guid withData:(BOOL)withData withRecognition:(BOOL)withRecognition
                     withAttributes:(BOOL)withAttributes withAlternateDate:(BOOL)withAlternateData;
@@ -569,8 +472,6 @@
 /** Get all of the application data for the Resource identified by GUID, with values returned within the LazyMap fullMap field. If there are no applicationData entries, then a LazyMap with an empty fullMap will be returned. If your application only needs to fetch its own applicationData entry, use getResourceApplicationDataEntry instead.
 
  @param  guid The GUID of the Resource.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceApplicationDataWithGuid:(EDAMGuid)guid;
 
@@ -578,8 +479,6 @@
 
  @param  guid The GUID of the Resource.
  @param key key in the dictionary
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceApplicationDataEntryWithGuid:(EDAMGuid)guid key:(NSString *)key;
 
@@ -588,8 +487,6 @@
  @param  guid The GUID of the Resource.
  @param key key in the dictionary
  @param value value in the dictionary
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)setResourceApplicationDataEntryWithGuid:(EDAMGuid)guid key:(NSString *)key value:(NSString *)value;
 
@@ -597,8 +494,6 @@
 
  @param  guid The GUID of the Resource.
  @param key key in the dictionary
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)unsetResourceApplicationDataEntryWithGuid:(EDAMGuid)guid key:(NSString *)key;
 
@@ -607,8 +502,6 @@
  This can be used to update the meta-data about the resource, but cannot be used to change the binary contents of the resource (including the length and hash). These cannot be changed directly without creating a new resource and removing the old one via updateNote.
 
  @param  resource A Resource object containing the desired fields to be populated on the service. The service will attempt to update the resource with the following fields from the client: guid(must be provided to identify the resource),mime,width,height,duration,attributes(optional. if present, the set of attributes will be replaced).
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateResource:(EDAMResource *)resource;
 
@@ -617,8 +510,6 @@
  For example, if this were an image resource, this would contain the raw bits of the image. If the Resource is found in a public notebook, the authenticationToken will be ignored (so it could be an empty string).
 
  @param  guid The GUID of the resource to be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceDataWithGuid:(EDAMGuid)guid;
 
@@ -634,8 +525,6 @@
 
  @param  withAlternateData If true, the Resource will include the binary contents of the 'alternateData' field's body, if an alternate form is present.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceByHashWithGuid:(EDAMGuid)guid contentHash:(NSData *)contentHash withData:(BOOL)withData
                          withRecognition:(BOOL)withRecognition withAlternateData:(BOOL)withAlternateData;
@@ -645,24 +534,18 @@
  If the caller asks about a resource that has no recognition data, this will throw EDAMNotFoundException. If the Resource is found in a public notebook, the authenticationToken will be ignored (so it could be an empty string).
 
  @param  guid The GUID of the resource whose recognition data should be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceRecognitionWithGuid:(EDAMGuid)guid;
 
 /** If the Resource with the provided GUID has an alternate data representation (indicated via the Resource.alternateData field), then this request can be used to retrieve the binary contents of that alternate data file. If the caller asks about a resource that has no alternate data form, this will throw EDAMNotFoundException.
 
  @param  guid The GUID of the resource whose recognition data should be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceAlternateDataWithGuid:(EDAMGuid)guid;
 
 /** Returns the set of attributes for the Resource with the provided GUID. If the Resource is found in a public notebook, the authenticationToken will be ignored (so it could be an empty string).
 
  @param  guid The GUID of the resource whose attributes should be retrieved.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getResourceAttributesWithGuid:(EDAMGuid)guid;
 
@@ -676,16 +559,12 @@
 
  @param  userId The numeric identifier for the user who owns the public notebook. To find this value based on a username string, you can invoke UserStore.getPublicUserInfo
  @param  publicUri The uri string for the public notebook, from Notebook.publishing.uri.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getPublicNotebookWithUserID:(EDAMUserID)userId publicUri:(NSString *)publicUri;
 
 /** Used to construct a shared notebook object. The constructed notebook will contain a "share key" which serve as a unique identifer and access token for a user to access the notebook of the shared notebook owner.
 
  @param  sharedNotebook An shared notebook object populated with the email address of the share recipient, the notebook guid and the access permissions. All other attributes of the shared object are ignored.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)createSharedNotebook:(EDAMSharedNotebook *)sharedNotebook;
 
@@ -696,16 +575,12 @@
  @param  guid The guid of the shared notebook
  @param  messageText User provided text to include in the email
  @param  recipients The email addresses of the recipients. If this list is empty then all of the users that the notebook has been shared with are emailed. If an email address doesn't correspond to share invite members then that address is ignored.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)sendMessageToSharedNotebookMembersWithGuid:(EDAMGuid)guid messageText:(NSString *)messageText
                                                recipients:(NSMutableArray *)recipients;
 
 /** Lists the collection of shared notebooks for all notebooks in the users account.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listSharedNotebooks;
 
@@ -714,8 +589,6 @@
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
  @param sharedNotebookIds a list of ShardNotebook.id longs identifying the objects to delete permanently.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeSharedNotebooksWithIds:(NSMutableArray *)sharedNotebookIds;
 
@@ -724,23 +597,17 @@
  A linked notebook can be either a link to a public notebook or to a private shared notebook.
 
  @param  linkedNotebook The desired fields for the linked notebook must be provided on this object. The name of the linked notebook must be set. Either a username uri or a shard id and share key must be provided otherwise a EDAMUserException is thrown.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)createLinkedNotebook:(EDAMLinkedNotebook *)linkedNotebook;
 
 /** Asks the service to update a linked notebook.
 
  @param  linkedNotebook Updates the name of a linked notebook.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateLinkedNotebook:(EDAMLinkedNotebook *)linkedNotebook;
 
 /** Returns a list of linked notebooks
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)listLinkedNotebooks;
 
@@ -749,8 +616,6 @@
  NOTE: This function is not available to third party applications. Calls will result in an EDAMUserException with the error code PERMISSION_DENIED.
 
  @param  guid The LinkedNotebook.guid field of the LinkedNotebook to permanently remove from the account.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)expungeLinkedNotebookWithGuid:(EDAMGuid)guid;
 
@@ -759,8 +624,6 @@
  This authenticationToken can be used with the various other NoteStore calls to find and retrieve notes, and if the permissions in the shared notebook are sufficient, to make changes to the contents of the notebook.
 
  @param  shareKey The 'shareKey' identifier from the SharedNotebook that was granted to some recipient. This string internally encodes the notebook identifier and a security signature.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)authenticateToSharedNotebookWithShareKey:(NSString *)shareKey;
 
@@ -768,16 +631,12 @@
 
  This requires an 'authenticationToken' parameter which should be the resut of a call to authenticateToSharedNotebook(...). I.e. this is the token that gives access to the particular shared notebook in someone else's account -- it's not the authenticationToken for the owner of the notebook itself.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getSharedNotebookByAuth;
 
 /** Attempts to send a single note to one or more email recipients.
 
  @param  parameters The note must be specified either by GUID (in which case it will be sent using the existing data in the service), or else the full Note must be passed to this call. This also specifies the additional email fields that will be used in the email.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)emailNoteWithParameters:(EDAMNoteEmailParameters *)parameters;
 
@@ -786,16 +645,12 @@
  This will return the secret "Note Key" for this note that can currently be used in conjunction with the Note's GUID to gain direct read-only access to the Note. If the note is already shared, then this won't make any changes to the note, and the existing "Note Key" will be returned. The only way to change the Note Key for an existing note is to stopSharingNote first, and then call this function.
 
  @param  guid The GUID of the note to be shared.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)shareNoteWithGuid:(EDAMGuid)guid;
 
 /** If this note is not already shared then this will stop sharing that note and invalidate its "Note Key", so any existing URLs to access that Note will stop working. If the Note is not shared, then this function will do nothing.
 
  @param  guid The GUID of the note to be un-shared.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)stopSharingNoteWithGuid:(EDAMGuid)guid;
 
@@ -805,16 +660,12 @@
 
  @param  guid The GUID identifying this Note on this shard.
  @param  noteKey The 'noteKey' identifier from the Note that was originally created via a call to shareNote() and then given to a recipient to access.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)authenticateToSharedNoteWithGuid:(NSString *)guid noteKey:(NSString *)noteKey;
 
 /** Update a SharedNotebook object.
 
  @param  sharedNotebook The SharedNotebook object containing the requested changes. The "id" of the shared notebook must be set to allow the service to identify the SharedNotebook to be updated. In addition, you MUST set the email, permission, and allowPreview fields to the desired values. All other fields will be ignored if set.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)updateSharedNotebook:(EDAMSharedNotebook *)sharedNotebook;
 

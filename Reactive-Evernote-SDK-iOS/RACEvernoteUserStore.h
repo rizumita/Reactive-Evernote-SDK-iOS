@@ -36,8 +36,6 @@
 
  @param  edamVersionMajor This should be the major protocol version that was compiled by the client. This should be the current value of the EDAM_VERSION_MAJOR constant for the client.
  @param  edamVersionMinor This should be the major protocol version that was compiled by the client. This should be the current value of the EDAM_VERSION_MINOR constant for the client.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)checkVersionWithClientName:(NSString *)clientName edamVersionMajor:(int16_t)edamVersionMajor
                          edamVersionMinor:(int16_t)edamVersionMinor;
@@ -47,8 +45,6 @@
  Various bootstrap profiles and settings may be used by the client to configure itself.
 
  @param  locale The client's current locale, expressed in language[_country] format. E.g., "en_US". See ISO-639 and ISO-3166 for valid language and country codes.
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getBootstrapInfoWithLocale:(NSString *)locale;
 
@@ -56,23 +52,17 @@
 
  The level of detail provided in the returned User structure depends on the access level granted by the token, so a web service client may receive fewer fields than an integrated desktop client.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getUser;
 
 /** Asks the UserStore about the publicly available location information for a particular username.
 
  @param username The username for the location information
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getPublicUserInfoWithUsername:(NSString *)username;
 
 /** Returns information regarding a user's Premium account corresponding to the provided authentication token, or throws an exception if this token is not valid.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getPremiumInfo;
 
@@ -80,8 +70,6 @@
 
  This method isn't needed by most clients, who can retrieve the correct NoteStore URL from the AuthenticationResult returned from the authenticate or refreshAuthentication calls. This method is typically only needed to look up the correct URL for a long-lived session token (e.g. for an OAuth web service).
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)getNoteStoreUrl;
 
@@ -89,8 +77,6 @@
 
  The resulting authentication token may be used to make NoteStore API calls against the business using the NoteStore URL returned in the result.
 
- @param success Success completion block.
- @param failure Failure completion block.
  */
 - (RACSignal *)authenticateToBusiness;
 
