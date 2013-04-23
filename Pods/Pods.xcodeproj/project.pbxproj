@@ -1,0 +1,1326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0063F9E9C4FA420AAA1F8D80 /* EvernoteBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = F37B8C0EBD214421A81758B1 /* EvernoteBridge.h */; settings = {}; };
+		031E5DA5A67F4BA5B939408D /* ENNoteImportRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B97B98527E48A48A2587A7 /* ENNoteImportRequest.h */; settings = {}; };
+		032E5AE13C734C9DA8213D81 /* EvernoteUserStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9D996E657C4F4CA4FA3544 /* EvernoteUserStore.h */; settings = {}; };
+		04107A0F8B9B43F6B5290D64 /* EvernoteUserStore+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9A689EF9D463EAE8B9F4E /* EvernoteUserStore+Extras.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		047B6012E8F34EBEBA3FC392 /* NSOrderedSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BF8335B72E423FAD7C7518 /* NSOrderedSet+RACSequenceAdditions.h */; settings = {}; };
+		0567F46232044B5892EE4CBF /* EXTConcreteProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B1D961D7B44428BC3C11E0 /* EXTConcreteProtocol.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		05F015BE5C7346EFA0046A01 /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B75ACB55D4E12A01E52BE /* NSObject+RACKVOWrapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		06053DA16C2440C484994672 /* RACScheduler+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F9711C4C16453BB6FC679D /* RACScheduler+Private.h */; settings = {}; };
+		064476E32647421FBC89086A /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F235C286E948258E97A1CC /* SSKeychain.h */; settings = {}; };
+		08B95CAB78A04DFEB6AC5964 /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 521E35A8F96044DD98E3EF80 /* THTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		09D942FBD67F436D964EBC81 /* UIControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AC48C1EDEFCB499BAB3DBF6B /* UIControl+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0A18659BE9294FAFB665789B /* KSHTMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B314C67B596047DE8F21641A /* KSHTMLWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0B686414F48A44A0AB43C39A /* ENSearchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA0564E62FF4D43AA50BE64 /* ENSearchRequest.h */; settings = {}; };
+		0E25BC904F0542198CDB84AF /* RACStringSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D168D4A12264F5395265537 /* RACStringSequence.h */; settings = {}; };
+		0E5EB4BA03154735A413C112 /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2534717396448CC84231B5A /* RACValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0EBF5404E5044A63A2346812 /* NSString+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D52DD15148F94A6FBC7642E7 /* NSString+RACSequenceAdditions.h */; settings = {}; };
+		0FF241E4F4F1461D8BF9337F /* EDAMNoteStore.h in Headers */ = {isa = PBXBuildFile; fileRef = C55044542DDA4BA8A74FAEBF /* EDAMNoteStore.h */; settings = {}; };
+		11ECD316A04846C593C877B0 /* THTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9F7702DEB2452490862AA7 /* THTTPClient.h */; settings = {}; };
+		12A0816EBFB447CEA0D1255E /* RACScopedDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = C853B857A27B4C0BA86369BF /* RACScopedDisposable.h */; settings = {}; };
+		12E08196CE054122B4D4DC52 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E962E0864A314729A9A388F9 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		12F52A429D424980974B9585 /* ENMLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312A433C756479296556817 /* ENMLUtility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		151B5694E34E4A6DB30883C3 /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = 29028980AAD5415083BABE1B /* TProtocolException.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1533565F1458498B908BF62B /* EDAMUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE5A8A405C4DE4AE43B14C /* EDAMUserStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		16DF70583E674EF2889D79E2 /* ENApplicationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5416B3A826B342B3A4A714A5 /* ENApplicationBridge.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		17903B5F68814734B3C0D7C0 /* RACObservablePropertySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7835A6E15C1A4626B4D9BA29 /* RACObservablePropertySubject.h */; settings = {}; };
+		1851DECEEF254568B07DEB9F /* TBinaryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 772B7946F9E644D4936A8FFC /* TBinaryProtocol.h */; settings = {}; };
+		18DA74DAD8934B20B3087A87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583FF362D31A40E485871E6C /* Foundation.framework */; settings = {}; };
+		1950C37F6FA54C049F3D96D6 /* RACEmptySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCC044C242B4E68AB0EAF13 /* RACEmptySequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1985256CB907402DB5917952 /* ENSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F96FF433164640A31870AD /* ENSearchRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1A5F68DB72FC4EF2B03FADCA /* NSDataBase64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEBD16FB219440384BF231D /* NSDataBase64Additions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1A81F6E4CDEA45BC8C4FF3D9 /* RACScopedDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE0A0461E14496B2196A6B /* RACScopedDisposable.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1AE5D306A08B46C8B9634BA3 /* EvernoteNoteStore+Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0B0DA4DEFE48D7812DB2B1 /* EvernoteNoteStore+Extras.h */; settings = {}; };
+		1B72C68976904B28BC8995C8 /* NSData+EvernoteSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F4C2CB986F420096DC042C /* NSData+EvernoteSDK.h */; settings = {}; };
+		1CF385D627FB4D36850A2CBA /* NSFileHandle+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F90D6CA2BE4446EBDAB5DEF /* NSFileHandle+RACSupport.h */; settings = {}; };
+		1D8D8A5C1FB04F63B937DF6A /* RACSignal+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB89991FC0C4D9085DA9093 /* RACSignal+Private.h */; settings = {}; };
+		1F497DC96E2845E388D374F1 /* RACDynamicSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 746C772797BE418DBF37D14C /* RACDynamicSequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		21DF662198294172B3BC7618 /* EDAMErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA587432DC84B88A6A6F442 /* EDAMErrors.h */; settings = {}; };
+		2355C3950944452A9DA4D521 /* RACSubscriptionScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BE57217DA04E4DA50E1FB3 /* RACSubscriptionScheduler.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		258F936576F44C2BBAAE0A92 /* RACCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 11509F140DA64C42919B983D /* RACCompoundDisposable.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		26A3F36F0C94408988C80B6C /* EDAMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D94FA12D1429A9020C30F /* EDAMTypes.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		294C0EAC292047CA9ED9B78E /* ENApplicationBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F23F1B9ECB84B0CAB8B1BF2 /* ENApplicationBridge.h */; settings = {}; };
+		29A3CB487CF849059DCD8FDE /* RACCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6A705219D34A68A58BAF10 /* RACCompoundDisposable.h */; settings = {}; };
+		29F5AA86191F43C98FFE7361 /* ENNoteViewRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F94FB90345034EC582E8E68E /* ENNoteViewRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		2A361E9FEAB2417FAA1DD2C0 /* TException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1D97CDDACD45C78DBD7C4C /* TException.h */; settings = {}; };
+		2C66D5DC8F0D4DFDB4451B9E /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F95E539CB51A4D85A5D97BCD /* metamacros.h */; settings = {}; };
+		2D054E19BE854CB3BF66D818 /* NSObject+RACObservablePropertySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B9D015362F4C9683100534 /* NSObject+RACObservablePropertySubject.h */; settings = {}; };
+		2E6B676581AF49F7A62E1C0E /* ENNewNoteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BE85D161723E472A8B2D8185 /* ENNewNoteRequest.h */; settings = {}; };
+		2EC68F4C73A248B5AFFE6C79 /* EvernoteNoteStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF24ED3ECC8490E9450AF76 /* EvernoteNoteStore.h */; settings = {}; };
+		2F75F38B136743FD814DF096 /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A1E1FBDEEB43ABA3BB26CB /* RACSignalSequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		2F7FC65D97AD491EAAEA6B86 /* NSDictionary+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B41AE8E13AD404D8E5D9927 /* NSDictionary+RACSequenceAdditions.h */; settings = {}; };
+		31066BF2B80E434193B88C6A /* RACBlockTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = C74DD9740B9E455E80F25B7C /* RACBlockTrampoline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3145599791CC4528B5CABD06 /* NSObject+RACKVOWrapperPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 189F7B1A7D8C47E5BF1EF3BB /* NSObject+RACKVOWrapperPrivate.h */; settings = {}; };
+		315C24205BC64E7E8CC08C32 /* RACTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D22555AE6E431588D60C8F /* RACTuple.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		32103727BCD9469C99CE78BC /* NSObject+RACSelectorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF219930C941BCAED3DD05 /* NSObject+RACSelectorSignal.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		341B85409B3B444DBC0E4EA3 /* EvernoteNoteStore+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2CA926FAA74E0A9DF2709B /* EvernoteNoteStore+Extras.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		35F50D16E31D4BB7A487F720 /* RACImmediateScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA1D811DD2840E2ADA2C98B /* RACImmediateScheduler.h */; settings = {}; };
+		3757BC4EBAF44E3E8A6C054E /* NSFileHandle+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAF4F85915D4ACF9DE12C19 /* NSFileHandle+RACSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		377FBB0A97AD4383B051285A /* RACArraySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = CB106DD610EF432B90E5828E /* RACArraySequence.h */; settings = {}; };
+		383E06623EEB4D01B16A98D3 /* EDAMUserStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF84EB3ED2C4CD7B4ED87F5 /* EDAMUserStore.h */; settings = {}; };
+		3986A10B4772471B852CDEE7 /* RACSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3282FA7CF47E481589CC9883 /* RACSignal.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		39C18FB91869468FBAEBCDAD /* RACObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E77BDEAF49D43ABBA53F8A1 /* RACObjCRuntime.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3A8BE32924BB4883A4B7DCCD /* RACStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEA4E694E914B6DB251E9E9 /* RACStream.h */; settings = {}; };
+		3B14421974F045BAB286E271 /* RACStringSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CDC500CA344791A70A26F6 /* RACStringSequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3B20CF22CC8D4DE2ACA0EC02 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 744FD09990164BCCA154E274 /* JRSwizzle.h */; settings = {}; };
+		3B92AD8CE8F644DEB4D8C104 /* KSHTMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E54B05D1F347A1AD04AB72 /* KSHTMLWriter.h */; settings = {}; };
+		3D4BCEAB5D084B15B124642C /* RACEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BB96B1614E4CDFBB2BE801 /* RACEvent.h */; settings = {}; };
+		3FA50864242F44359B620FE9 /* RACEagerSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BBB8FBC5844853B7CE0F3C /* RACEagerSequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		442C4EA5D3F04AF3A96E7693 /* RACSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = D151E20E350646B689B121A8 /* RACSubscriber.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4776F13FFB6D4E8CB2D44301 /* NSDictionary+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A9BC7D4DB4725882490C9 /* NSDictionary+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		47DDE5ED976F47688BA396E2 /* TProtocolUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5BA010217743F8B534331B /* TProtocolUtil.h */; settings = {}; };
+		4885ADB35AC74333946538EF /* RACBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 55281265E84D4619AE5D6B61 /* RACBinding.h */; settings = {}; };
+		4983DB75EE054DC3A39CDE16 /* RACMulticastConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B129694D7AE14486991926BE /* RACMulticastConnection.h */; settings = {}; };
+		499EF5AD3B5F4BAEBF0955F8 /* EvernoteNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B89F860CB5264C40AE884800 /* EvernoteNoteStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4D5604448ECB43CD8D6115D8 /* KSWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B580D4BA67E64BE3B9984006 /* KSWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4ECF8600C72B4176853F592B /* NSNotificationCenter+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C6FC7662B3CA43D6AE95815D /* NSNotificationCenter+RACSupport.h */; settings = {}; };
+		4F696CCB11FE4CAEA49CCA2E /* RACEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F577135F5564427A80585F8A /* RACEvent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		52C1A90952754F1DA5FEF27A /* RACQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BC9E8C5314BDBA6F9F334 /* RACQueueScheduler.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		54FB45C466A749309E9872E2 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF5B3064E545B3A76EFAF4 /* UITextView+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5551DC7C7D7F4A8EB1982077 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB1A55BEC084BAC9314EEDC /* JRSwizzle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		569168B87F1C42079BC56AC1 /* RACEagerSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7254603B4C4349B570D86E /* RACEagerSequence.h */; settings = {}; };
+		584BB258E4C94DE8A7FEB68E /* ENCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA38B20559446D080327491 /* ENCredentials.h */; settings = {}; };
+		59E3706E835C41159AA86FCA /* RACBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A5CA2BCCB4F72BF24A8C6 /* RACBinding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5BC4CC941A294F889387AD51 /* NSInvocation+RACTypeParsing.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0C4B51DC564477A7911798 /* NSInvocation+RACTypeParsing.h */; settings = {}; };
+		5C14C0317C3B4B5CAD7BAA58 /* EDAMNoteStoreClient+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0CACC159A644539216C3CF /* EDAMNoteStoreClient+Utilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5EB5F251529042FC922F1FEB /* TProtocolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B014C691B9F4DFBA46541A3 /* TProtocolFactory.h */; settings = {}; };
+		5FC72E744C424B27BA5B400B /* RACBinding+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 329FEC50556F4C9692D7B2BA /* RACBinding+Private.h */; settings = {}; };
+		5FCE243379604581A32EAFE8 /* RACEventTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = E174FD18D5DE42E4B9EC6F53 /* RACEventTrampoline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		607367B382FF4892B61C1B04 /* TProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 59552D99A7A04EC2BAA6361A /* TProcessor.h */; settings = {}; };
+		609310AC3ECB40408EB8B05A /* TProtocolException.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA636C9DBE64B48A642359A /* TProtocolException.h */; settings = {}; };
+		60ED5C4B847B4284BDE7E2D2 /* ENAFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE2AC68CDA140F9A5ECE3D9 /* ENAFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		61184074212E487DB5F7383A /* KSXMLAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9309381967BC4A43A6A4E2A7 /* KSXMLAttributes.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6133323C985D46DEA2B17932 /* EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA70E1EF1B94C04937F6360 /* EvernoteSDK.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		62395F71E17F4E0FB0141246 /* EDAMLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2D4980E694F1380F50828 /* EDAMLimits.h */; settings = {}; };
+		624A47A97D0147AD8DBB5B1B /* ENApplicationBridge_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AE44BDE8204E16AF812FA6 /* ENApplicationBridge_Private.h */; settings = {}; };
+		6419F0DBF2CB45A5BF56E278 /* NSData+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B5B73CF0774FDF807E95A7 /* NSData+RACSupport.h */; settings = {}; };
+		6535B9AB7BB941E08A00001D /* NSData+ENBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1716F6365E4BD28D9B498C /* NSData+ENBase64.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		661A8E228370404D84B12D93 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F248BC37D23408D8FBF507E /* SSKeychain.m */; settings = {}; };
+		67030D7F5DB3440999A52209 /* NSString+XMLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C171309E4F64834B8EE5F66 /* NSString+XMLAdditions.h */; settings = {}; };
+		686FBB70E98A411AB50BBD37 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A39F1AE629434FA195CEBD /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		68E652DEFE2640F2880F75C2 /* EDAMTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 700B0B61EF6B45CE89E2781A /* EDAMTypes.h */; settings = {}; };
+		6B3B2E9B6E564F02986D86F4 /* EvernoteSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E637495C151840F78699C09C /* EvernoteSession.h */; settings = {}; };
+		6D286CAC580642169BC4013A /* ENCredentialStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 99958A29D13448409AE82A3D /* ENCredentialStore.h */; settings = {}; };
+		6F80F740FD96499EA1AED18B /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D11910A384192B84F33A9 /* EDAMErrors.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6FCD8A4899114D3489EF46C3 /* NSString+XMLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E83FD6AC694757A79AB942 /* NSString+XMLAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		713FC66AC23B48308379E4CD /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE45D94443D4E48911B1316 /* RACSubscriber.h */; settings = {}; };
+		71E995F262164B189085DF07 /* RACDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D233F6E42B4D328D3BB116 /* RACDelegateProxy.h */; settings = {}; };
+		725C552AF62F4766B6A9F3E6 /* RACCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1B487C0A84417DA549BE29 /* RACCommand.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		728B1DC6F1BF49FEB61E7119 /* RACUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 784762FACE134037A550DDEE /* RACUnit.h */; settings = {}; };
+		734D6F48421A47AC877ECAF2 /* ENAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 397BA6DD0DC94DCEAD5225AD /* ENAPI.h */; settings = {}; };
+		73DF6C99BA404A0BB8409635 /* RACObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFDA1549D2044788A3914C1 /* RACObjCRuntime.h */; settings = {}; };
+		77AC2FA87BDC4A7B9FAC2879 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B309FD5DC494BA9BDD436 /* TBinaryProtocol.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		788D2C6B0213484CAC117235 /* RACBehaviorSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA2A37478F84E91A6EEBC4F /* RACBehaviorSubject.h */; settings = {}; };
+		79A58C2B8DF6480EB5168107 /* TMemoryBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD0366C9C6748C4941627E8 /* TMemoryBuffer.h */; settings = {}; };
+		79D23FD11BC146869167FC34 /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 447FE97CCC3F4CDCB2B0104E /* ENCredentialStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7A0CB381806C43F7886F0607 /* NSEnumerator+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DD49194BA44DFAAE1A047B /* NSEnumerator+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7AEAC48AA6F54BEBA73070F3 /* EvernoteUserStore+Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = EA677A36F5BF49CDAEE92EA9 /* EvernoteUserStore+Extras.h */; settings = {}; };
+		7B6C7F486904479387521B0E /* Thrift.h in Headers */ = {isa = PBXBuildFile; fileRef = 222D10279DBE4F259D57DB6C /* Thrift.h */; settings = {}; };
+		7BCCE1D2073B4CD5B37FDF7D /* TApplicationException.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC24E4E91DC474DBCA69EAB /* TApplicationException.h */; settings = {}; };
+		7BD6C6EE7FA642EA9CA08D47 /* NSObject+RACDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 6239D8A0878642E287057D06 /* NSObject+RACDeallocating.h */; settings = {}; };
+		7D5EA6E5A7D248538CABED43 /* ENOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190F10DB350B4A24A79192C7 /* ENOAuthViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7D90CAF8A01541608F5AEF1F /* NSString+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D66ED85C455649FDB2612903 /* NSString+RACSupport.h */; settings = {}; };
+		7D9F54FC7C724D1F82807047 /* RACBacktrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A201E8E43D4AC3B9997B0E /* RACBacktrace.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		802760FC2A514374881AF95E /* ENLinkNotebookRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EDEC7974B04963ABCFD65B /* ENLinkNotebookRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		80872ACCA68A4A33AA13B856 /* KSWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA7CBE5199F437EAEA08C29 /* KSWriter.h */; settings = {}; };
+		80B1772AE9A442E3BD295893 /* RACKVOTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5E58BE2B674EFA849D5EF9 /* RACKVOTrampoline.h */; settings = {}; };
+		813BA1FDE6684F79AE81BDDE /* KSXMLAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4497809C52449CB8E96F7D /* KSXMLAttributes.h */; settings = {}; };
+		818B5AFB3BD243B89670D635 /* ENOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ADCE316A28E434085519AF1 /* ENOAuthViewController.h */; settings = {}; };
+		833E5293A5144847882317B7 /* NSEnumerator+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B488BA91704FC9AC59C691 /* NSEnumerator+RACSequenceAdditions.h */; settings = {}; };
+		84776322F63143F9B346F9C0 /* ENNoteImportRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E941248D22421095E36ED0 /* ENNoteImportRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		84F630B4A720466C9E16F297 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A5BA218D141DE8F5B2181 /* TTransportException.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		85398C1043F94F80BE880F32 /* RACPropertySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A15C3A224BA48BB8590570A /* RACPropertySubject.h */; settings = {}; };
+		86B8EE5E9C454D439CD1B9B8 /* RACScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0842C3A133AD4740856F833C /* RACScheduler.h */; settings = {}; };
+		86F99BBD89014E2D8EE19E62 /* NSDate+EDAMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A307B6E6A647E0866EC566 /* NSDate+EDAMAdditions.h */; settings = {}; };
+		86FE427F23C94FC089D2B607 /* EXTConcreteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 151DF7E69F4A492A9C0F3CE8 /* EXTConcreteProtocol.h */; settings = {}; };
+		880AC55F893D49869E6270D3 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E6DD4CEC8F4F80B10075AE /* UITextView+RACSignalSupport.h */; settings = {}; };
+		8A25007C488A426E8CAB60F7 /* EvernoteSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A237B6B3F084F4F96F9A400 /* EvernoteSDK.h */; settings = {}; };
+		8A9AA7AD469F400F9FA5ABCB /* NSDate+EDAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6257A1CFD449269DE78142 /* NSDate+EDAMAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8AA6990A4BEE4145AFE41AC6 /* ENLinkNotebookRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EA40EF8BAEB945C08FCC8F77 /* ENLinkNotebookRequest.h */; settings = {}; };
+		8ABCC64D265F4F63B1C077A0 /* NSObject+RACKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 007A2565422346E398856331 /* NSObject+RACKVOWrapper.h */; settings = {}; };
+		8F5EF4DBF45A4D32AAA61048 /* RACArraySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7DD3B8336A4E5A82AC46C4 /* RACArraySequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8FDB6C8DF58E45C08F52B3FB /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A79BFFEEBF534C6499132B96 /* NSString+URLEncoding.h */; settings = {}; };
+		9003E4EA34CB43E99A6482D5 /* ENAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B08BCF1F74C476BB34F18E9 /* ENAuthenticationRequest.h */; settings = {}; };
+		90AA2B3247754C21A39501FC /* KSForwardingWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CEAFC5D9E246C7B5F70F43 /* KSForwardingWriter.h */; settings = {}; };
+		9192A8ECD1364DDBB64E74CD /* UIControl+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6819183A6D4F42F09763EF9B /* UIControl+RACSignalSupport.h */; settings = {}; };
+		932C55921E144443A64A54AE /* RACSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DD1295079B4833AA23AC3E /* RACSubject.h */; settings = {}; };
+		945ABE4BF10C4944AD1ABD1D /* KSXMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E79B51C2454D17835F8E4F /* KSXMLWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		960913E3FFAC407E867ACB9A /* KSForwardingWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B78D78F4884C94BDDCBDD4 /* KSForwardingWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9698DC4983504DE5AFFAE047 /* NSObject+RACSelectorSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 90C6F0D33B4B46E6AF134581 /* NSObject+RACSelectorSignal.h */; settings = {}; };
+		97D73EEC8BAB434BA12DF928 /* EDAMNoteStoreClient+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E058B59281F249728A5284EA /* EDAMNoteStoreClient+Utilities.h */; settings = {}; };
+		98E5973AD0174349B0A47346 /* NSInvocation+RACTypeParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BAC88B498400E941AFC12 /* NSInvocation+RACTypeParsing.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9A5C83846974448FAD38AC09 /* NSDataBase64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C30FC8DBB8714F07983230C9 /* NSDataBase64Additions.h */; settings = {}; };
+		9B865D5D1E3D4B3D9D69AF21 /* TObjective-C.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AEEC9F59554BA29161CD7E /* TObjective-C.h */; settings = {}; };
+		9D9DE08AE33E418F83AF2A63 /* RACCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B93C62A796D467598B83A3A /* RACCommand.h */; settings = {}; };
+		9DF416052B9445419B022199 /* RACPropertySubject+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E79B31C2B6334E8C86FAAD2F /* RACPropertySubject+Private.h */; settings = {}; };
+		9E13D589D00C49C7B48D5C34 /* RACEventTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD9DF04BC844C579D41EE3B /* RACEventTrampoline.h */; settings = {}; };
+		9EB4CC9343014D1EB72B3AC1 /* RACTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D8380DD55A4663A635BD5F /* RACTuple.h */; settings = {}; };
+		9FED4830711C455F83493858 /* RACGroupedSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = C67B0D72CFE2438583CF88D4 /* RACGroupedSignal.h */; settings = {}; };
+		A5511E27ABD946129B8E61B2 /* RACDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A863C1707C47E39CA82CCF /* RACDisposable.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A60C83D3B33540B287D7C8A5 /* RACReplaySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = B62A4C78CE2349A8A9EF7674 /* RACReplaySubject.h */; settings = {}; };
+		A6F9B79042724CC9B065F4DC /* ENNewNoteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0A591DC614D76B5060043 /* ENNewNoteRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A80F3DBE724C409385023AE4 /* ENAFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E6011EC0CD8341D988EABBC8 /* ENAFURLConnectionOperation.h */; settings = {}; };
+		A8C8DD78FFFB49AA97DEA99F /* RACReplaySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E482909184603989E9304 /* RACReplaySubject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		AA9A70C6C88148718CD0E15C /* EDAMNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AED306A92CF49B6804F902E /* EDAMNoteStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		AD1194A6F3A84EC3B66602A6 /* ENGCOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 56E39C501B2F423D89E4A455 /* ENGCOAuth.h */; settings = {}; };
+		AD8C2051BBF24C17896C28E9 /* RACStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8CFDB7070421398D93CE6 /* RACStream.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		AF077C4A4F1E40F294B2A039 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 74688648F39E4D58A7CA661F /* UITextField+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		AF24FACF80A24F8D9714A520 /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEAE99B2574264A3F87CE9 /* TMemoryBuffer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B20021FBE94A43EF919AF263 /* RACDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3605B56208AA4656A37E3D61 /* RACDelegateProxy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B49A9E9C83334894BCAC9390 /* RACMulticastConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 898F2128B69540A99A78B2C3 /* RACMulticastConnection+Private.h */; settings = {}; };
+		B5856865672F44A58673FA8E /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 043C6E0523754912B97B8C8C /* TProtocolUtil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B593320C0E6E4EB99966C0B7 /* RACSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E8BD9C0D7C4D5983A49044 /* RACSwizzling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B60ECB37FDF1441EB8005DAD /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A0AA3DD281426C80A5AF92 /* ENConstants.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B6D3D4D042D543BFBE1AEE09 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = D7410F5CB25746C9913A0F12 /* EXTKeyPathCoding.h */; settings = {}; };
+		B90FECE4FD6142558076294C /* RACSignalSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = A7BF4DB1F4DF40BAA5D6E2BB /* RACSignalSequence.h */; settings = {}; };
+		B999A0AB6FA645FDB79D8B51 /* ENApplicationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2A24EA9A25453583643B15 /* ENApplicationRequest.h */; settings = {}; };
+		BA8162DEEB684658B6BE348B /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470B975E7D14C5D89F315B8 /* NSString+RACSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BB70B1D13BE74EFE99A96F19 /* RACObservablePropertySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = B58BBBBA7E344D60909C192F /* RACObservablePropertySubject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BC6678E951A04B97BD19200B /* NSOrderedSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD04D0E9CBC3414BBC7B48A1 /* NSOrderedSet+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BE9F247AA3A84E79B08A81A5 /* ReactiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF4011EF4144A71B270105E /* ReactiveCocoa.h */; settings = {}; };
+		C3C17FA6164745D1950C0A24 /* RACBlockTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B09C96868F4F23BE3B1672 /* RACBlockTrampoline.h */; settings = {}; };
+		C5992D19BEDC411497370121 /* RACSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 2283EFA0ACE9411097514E75 /* RACSequence.h */; settings = {}; };
+		C5D0769A2A1240159FDBE6CD /* RACScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 432B3185AD9A4EA89124AD42 /* RACScheduler.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C7B19E510FBF44DBB7C372A1 /* ENResourceAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE660CA14FE4EAB8177AAA9 /* ENResourceAttachment.h */; settings = {}; };
+		C947C74FF3C649F6AD5DF9B2 /* NSData+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFC6294FB240508C978938 /* NSData+RACSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C9AAFB234FF34C06ACE1D4B5 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EB0DCD117D4214933FCA4D /* EXTScope.h */; settings = {}; };
+		C9D480B562B04F2D820D49F5 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 3780AEFAF2074FE99E6166E1 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		CAACA9E462DC4B8BB54BE1FB /* ENMLUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D89F720075464B89A3CAE9 /* ENMLUtility.h */; settings = {}; };
+		CD2CC58F6E3E4B7BA87CDBB1 /* EDAM.h in Headers */ = {isa = PBXBuildFile; fileRef = D820BF4B96F6494BBC45E0D1 /* EDAM.h */; settings = {}; };
+		CD883497E9D1454488A96934 /* TProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 001FA4B1975A4821B11820BE /* TProtocol.h */; settings = {}; };
+		D1C15208626C4B92856BF425 /* RACSubscriptionScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = B55AC782EFDB4B8FAC077991 /* RACSubscriptionScheduler.h */; settings = {}; };
+		D1DD734BD6164D458EB5F0B2 /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = C6464EC3D74F49399783ED2C /* TException.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D282FA3C32B24BD28A070975 /* RACKVOTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B11664351416E888F6AAE /* RACKVOTrampoline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D43D89D6495D49A2B0DF45F9 /* RACSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 16125BA06F454EC28FAAFF6B /* RACSwizzling.h */; settings = {}; };
+		D5293A860D40449498D61807 /* ENGCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1823B4D95D0F4E2181A9EE44 /* ENGCOAuth.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D5CC7B61404545228CEA44FF /* RACBacktrace+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F717F42139471D8404F26C /* RACBacktrace+Private.h */; settings = {}; };
+		D64E91609E6A4B86A279FB54 /* UITextField+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F19D8D9B2541FEB4F7429B /* UITextField+RACSignalSupport.h */; settings = {}; };
+		D7425FDC33EB4E42A64CAE18 /* RACPropertySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = B9570C49D011463985352F7A /* RACPropertySubject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D77DF9470CB24C1B93DCD7BD /* RACEmptySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = B425435DDF374F31B7720810 /* RACEmptySequence.h */; settings = {}; };
+		D91F0CD9AC074BDA966A0B11 /* NSArray+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F0ED5FA4A4AEB8CF9DC5A /* NSArray+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D92BB235587E4F8188FB5C5B /* RACMulticastConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F99EF41280064536A0A832C8 /* RACMulticastConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		DB080CD55D8943F7BAB97A13 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 073AE89F392E4FEE8EEB9880 /* Pods-dummy.m */; settings = {}; };
+		DB6971397A534B519E5F83F9 /* RACSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A00F8720A4D09A71F3346 /* RACSignal.h */; settings = {}; };
+		DC711C3BA4A14FB68C1CAF79 /* RACUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 356FF5E9E73140FC88C95BD1 /* RACUnit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		DE7A1FE5B66D474DB744FC7C /* ENResourceAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 55418E9A6516454EB35B66FC /* ENResourceAttachment.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		DF4C65C65A87458286338CB3 /* RACImmediateScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6605F77E7F5C41C288858C4E /* RACImmediateScheduler.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E1E48D8D66F648BEAC034B12 /* RACGroupedSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = E975D0D63AA34BD48E1D135B /* RACGroupedSignal.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E20F8EC4D88C47879C6CE40F /* RACBacktrace.h in Headers */ = {isa = PBXBuildFile; fileRef = AE50633037D14E14936ADF8F /* RACBacktrace.h */; settings = {}; };
+		E2C62AFE184B4112B18325DA /* NSData+ENBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9173D007C58F49EAB74E53C8 /* NSData+ENBase64.h */; settings = {}; };
+		E5466CBCC2B24765AC0AD9F9 /* TTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = B05DDA4C76E44B5993EE0418 /* TTransport.h */; settings = {}; };
+		E58DA4CD288A46CE9874E0E4 /* RACSubscriptingAssignmentTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4C230738A64A0D904645F3 /* RACSubscriptingAssignmentTrampoline.h */; settings = {}; };
+		E6184B0F7F614C6DA1548482 /* NSObject+RACDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 2222F709602F45938D865CD1 /* NSObject+RACDeallocating.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E6E2EA85C9CD46EAADEB2B83 /* TProcessorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5F7BD261B4461696FC80BE /* TProcessorFactory.h */; settings = {}; };
+		E6FA792AF3544F8F9EC6103D /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 853A48FE55594241BEAE24D5 /* NSNotificationCenter+RACSupport.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E9FF58340D4842218401B9F8 /* NSObject+RACLifting.m in Sources */ = {isa = PBXBuildFile; fileRef = 06355F799805491186478693 /* NSObject+RACLifting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		EBCAEF0AB3B44FE7A5592021 /* RACQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = E776911659344F34AE2B9465 /* RACQueueScheduler.h */; settings = {}; };
+		ED1EAD2234B646EB833A9172 /* ENConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 6841EF9874CA41E79E0E992C /* ENConstants.h */; settings = {}; };
+		EDBCD082170B4A1C8CA529EC /* NSSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 663E4252466E46BE98671471 /* NSSet+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		EEDBBBD6A31D478B89FC6F1C /* NSObject+RACPropertySubscribing.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FF9385F9B24E37B582EF2D /* NSObject+RACPropertySubscribing.h */; settings = {}; };
+		EFB8CDDAD2C3463A965D48BB /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF088989855474C85E67926 /* ENCredentials.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F02C3D7F665D478C8DF235A1 /* RACSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F38A9034A9A426DB21BED2E /* RACSubject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F1115309233F483AA02A23C0 /* ENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A1F20F5DD248728CE263F3 /* ENAPI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F17F17310EE84CD1863653AC /* ENNoteViewRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E36D1EFDE0948059152E517 /* ENNoteViewRequest.h */; settings = {}; };
+		F1DF578AA1274D39847ADCF1 /* RACSignal+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B5AFB8A0F24A66BF9F69FF /* RACSignal+Operations.h */; settings = {}; };
+		F2D50484D52B434FB0DB27A9 /* RACValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C44AE6CA680414CB33037AA /* RACValueTransformer.h */; settings = {}; };
+		F3205124535F4F70868950DF /* NSObject+RACPropertySubscribing.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C0EF26040447D0AA42121D /* NSObject+RACPropertySubscribing.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F35EC1DD5A2B41B1B95562A6 /* EvernoteSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2637CC478B99466C8CCF7DCE /* EvernoteSession.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F4220A29699D4F0EB20B1784 /* RACSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C29F4F222664D119B501370 /* RACSequence.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F50E356341FE4D64B44790EE /* KSXMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F69FF4C26846BF806C196B /* KSXMLWriter.h */; settings = {}; };
+		F54F47CA4A8F4FC18D8BEF1B /* RACBehaviorSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D6F4BC4C3147C1AD87EC67 /* RACBehaviorSubject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F61F806FA14C4BC7894C67DE /* NSString+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B8B3E7BC74137A402B75F /* NSString+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F6A8EAF300E74803B17BE892 /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F787491B18194CAC83F9F50A /* EXTRuntimeExtensions.h */; settings = {}; };
+		F7428BE75442473FB0869AD0 /* NSData+EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD75248B3E047C59F9C75A3 /* NSData+EvernoteSDK.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F747F82368AE4EA18807ED8E /* TTransportException.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB893A765B14155A051442E /* TTransportException.h */; settings = {}; };
+		F8013753B26348FC96EEAC0C /* ENAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1278AA21CE5A4F218E422A0C /* ENAuthenticationRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F86FA0A4315843CC8FEE50B8 /* NSObject+RACObservablePropertySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E86C73E990A4AB798FFDB0A /* NSObject+RACObservablePropertySubject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F881A54D4B4240CCA856E018 /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B334A01B02A49E1A060BD51 /* EDAMLimits.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F88E76DD0EB6481695885F3F /* NSObject+RACLifting.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC80286A4CC4A73A3E72ADC /* NSObject+RACLifting.h */; settings = {}; };
+		FAC13CD521FB46C883B8B473 /* EvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA4400F9B0A47C6BEC45A3B /* EvernoteUserStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FB4393CC55FA4A58AD74EB68 /* RACSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A4655474E4E9F8AAC4E15 /* RACSubscriptingAssignmentTrampoline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FB5CDF2B5E9045AEA4A16CEB /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F5EC4A9EDC43E5BE52C88A /* TApplicationException.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FB9622E7DC0C4A948C5E7BB1 /* NSSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A254FA72FBD4BF5BC5FC78D /* NSSet+RACSequenceAdditions.h */; settings = {}; };
+		FD1201B2E3F648468CB0425E /* RACDynamicSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 5993F47EFCF74BBF8EC9F3FE /* RACDynamicSequence.h */; settings = {}; };
+		FD5C03389B274F51BDD380A2 /* RACDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF71363D7934C2AB70A9CAC /* RACDisposable.h */; settings = {}; };
+		FDE29561E96C4B66971FE774 /* NSArray+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC979F19D7C4A6B8612CE68 /* NSArray+RACSequenceAdditions.h */; settings = {}; };
+		FECF9239709C4F44A818CEB8 /* RACSignal+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FB8139DBC24299BBDA9F4A /* RACSignal+Operations.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		001FA4B1975A4821B11820BE /* TProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TProtocol.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TProtocol.h"; sourceTree = SOURCE_ROOT; };
+		003B309FD5DC494BA9BDD436 /* TBinaryProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TBinaryProtocol.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TBinaryProtocol.m"; sourceTree = SOURCE_ROOT; };
+		007A2565422346E398856331 /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACKVOWrapper.h"; sourceTree = SOURCE_ROOT; };
+		0312A433C756479296556817 /* ENMLUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENMLUtility.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/ENMLUtility.m"; sourceTree = SOURCE_ROOT; };
+		043C6E0523754912B97B8C8C /* TProtocolUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TProtocolUtil.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TProtocolUtil.m"; sourceTree = SOURCE_ROOT; };
+		06355F799805491186478693 /* NSObject+RACLifting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACLifting.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACLifting.m"; sourceTree = SOURCE_ROOT; };
+		073AE89F392E4FEE8EEB9880 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-dummy.m"; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
+		0842C3A133AD4740856F833C /* RACScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScheduler.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACScheduler.h; sourceTree = SOURCE_ROOT; };
+		08B97B98527E48A48A2587A7 /* ENNoteImportRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteImportRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENNoteImportRequest.h"; sourceTree = SOURCE_ROOT; };
+		08F69FF4C26846BF806C196B /* KSXMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSXMLWriter.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSXMLWriter.h"; sourceTree = SOURCE_ROOT; };
+		09B09C96868F4F23BE3B1672 /* RACBlockTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBlockTrampoline.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBlockTrampoline.h; sourceTree = SOURCE_ROOT; };
+		0ADCE316A28E434085519AF1 /* ENOAuthViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENOAuthViewController.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENOAuthViewController.h"; sourceTree = SOURCE_ROOT; };
+		0AED306A92CF49B6804F902E /* EDAMNoteStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMNoteStore.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMNoteStore.m"; sourceTree = SOURCE_ROOT; };
+		0C0C4B51DC564477A7911798 /* NSInvocation+RACTypeParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+RACTypeParsing.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSInvocation+RACTypeParsing.h"; sourceTree = SOURCE_ROOT; };
+		0C7DD3B8336A4E5A82AC46C4 /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACArraySequence.m; sourceTree = SOURCE_ROOT; };
+		0EE660CA14FE4EAB8177AAA9 /* ENResourceAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENResourceAttachment.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENResourceAttachment.h"; sourceTree = SOURCE_ROOT; };
+		0F1716F6365E4BD28D9B498C /* NSData+ENBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ENBase64.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/cocoa-oauth/NSData+ENBase64.m"; sourceTree = SOURCE_ROOT; };
+		0FA2A37478F84E91A6EEBC4F /* RACBehaviorSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBehaviorSubject.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBehaviorSubject.h; sourceTree = SOURCE_ROOT; };
+		11509F140DA64C42919B983D /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACCompoundDisposable.m; sourceTree = SOURCE_ROOT; };
+		11A307B6E6A647E0866EC566 /* NSDate+EDAMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+EDAMAdditions.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/NSDate+EDAMAdditions.h"; sourceTree = SOURCE_ROOT; };
+		1278AA21CE5A4F218E422A0C /* ENAuthenticationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENAuthenticationRequest.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENAuthenticationRequest.m"; sourceTree = SOURCE_ROOT; };
+		13A201E8E43D4AC3B9997B0E /* RACBacktrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBacktrace.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBacktrace.m; sourceTree = SOURCE_ROOT; };
+		14F9711C4C16453BB6FC679D /* RACScheduler+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Private.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACScheduler+Private.h"; sourceTree = SOURCE_ROOT; };
+		151DF7E69F4A492A9C0F3CE8 /* EXTConcreteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTConcreteProtocol.h; path = libextobjc/extobjc/EXTConcreteProtocol.h; sourceTree = SOURCE_ROOT; };
+		15FE5A8A405C4DE4AE43B14C /* EDAMUserStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMUserStore.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMUserStore.m"; sourceTree = SOURCE_ROOT; };
+		16125BA06F454EC28FAAFF6B /* RACSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSwizzling.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSwizzling.h; sourceTree = SOURCE_ROOT; };
+		16556C6DA972497888BA07FF /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.plist"; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		1823B4D95D0F4E2181A9EE44 /* ENGCOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENGCOAuth.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/cocoa-oauth/ENGCOAuth.m"; sourceTree = SOURCE_ROOT; };
+		189F7B1A7D8C47E5BF1EF3BB /* NSObject+RACKVOWrapperPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapperPrivate.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACKVOWrapperPrivate.h"; sourceTree = SOURCE_ROOT; };
+		190F10DB350B4A24A79192C7 /* ENOAuthViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENOAuthViewController.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENOAuthViewController.m"; sourceTree = SOURCE_ROOT; };
+		199A5BA218D141DE8F5B2181 /* TTransportException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTransportException.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/TTransportException.m"; sourceTree = SOURCE_ROOT; };
+		1B014C691B9F4DFBA46541A3 /* TProtocolFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TProtocolFactory.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TProtocolFactory.h"; sourceTree = SOURCE_ROOT; };
+		1C9F7702DEB2452490862AA7 /* THTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THTTPClient.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/THTTPClient.h"; sourceTree = SOURCE_ROOT; };
+		1E77BDEAF49D43ABBA53F8A1 /* RACObjCRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACObjCRuntime.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACObjCRuntime.m; sourceTree = SOURCE_ROOT; };
+		1EF24ED3ECC8490E9450AF76 /* EvernoteNoteStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EvernoteNoteStore.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteNoteStore.h"; sourceTree = SOURCE_ROOT; };
+		1F248BC37D23408D8FBF507E /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain/SSKeychain.m; sourceTree = SOURCE_ROOT; };
+		1F4A00F8720A4D09A71F3346 /* RACSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignal.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal.h; sourceTree = SOURCE_ROOT; };
+		1F9D94FA12D1429A9020C30F /* EDAMTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMTypes.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMTypes.m"; sourceTree = SOURCE_ROOT; };
+		1FD9DF04BC844C579D41EE3B /* RACEventTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEventTrampoline.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEventTrampoline.h; sourceTree = SOURCE_ROOT; };
+		204835F4094741ED9136085B /* Pods-header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-header.h"; path = "Pods-header.h"; sourceTree = SOURCE_ROOT; };
+		2222F709602F45938D865CD1 /* NSObject+RACDeallocating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDeallocating.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACDeallocating.m"; sourceTree = SOURCE_ROOT; };
+		222D10279DBE4F259D57DB6C /* Thrift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Thrift.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/Thrift.h"; sourceTree = SOURCE_ROOT; };
+		2283EFA0ACE9411097514E75 /* RACSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSequence.h; sourceTree = SOURCE_ROOT; };
+		2423073311534FB788D7F2BF /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.markdown"; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
+		24E2D4980E694F1380F50828 /* EDAMLimits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMLimits.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMLimits.h"; sourceTree = SOURCE_ROOT; };
+		2637CC478B99466C8CCF7DCE /* EvernoteSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EvernoteSession.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteSession.m"; sourceTree = SOURCE_ROOT; };
+		26D233F6E42B4D328D3BB116 /* RACDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDelegateProxy.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACDelegateProxy.h; sourceTree = SOURCE_ROOT; };
+		28BE57217DA04E4DA50E1FB3 /* RACSubscriptionScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptionScheduler.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubscriptionScheduler.m; sourceTree = SOURCE_ROOT; };
+		28EB0DCD117D4214933FCA4D /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = libextobjc/extobjc/EXTScope.h; sourceTree = SOURCE_ROOT; };
+		29028980AAD5415083BABE1B /* TProtocolException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TProtocolException.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TProtocolException.m"; sourceTree = SOURCE_ROOT; };
+		2B41AE8E13AD404D8E5D9927 /* NSDictionary+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RACSequenceAdditions.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSDictionary+RACSequenceAdditions.h"; sourceTree = SOURCE_ROOT; };
+		2B6257A1CFD449269DE78142 /* NSDate+EDAMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+EDAMAdditions.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/NSDate+EDAMAdditions.m"; sourceTree = SOURCE_ROOT; };
+		2BC80286A4CC4A73A3E72ADC /* NSObject+RACLifting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACLifting.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACLifting.h"; sourceTree = SOURCE_ROOT; };
+		2C29F4F222664D119B501370 /* RACSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSequence.m; sourceTree = SOURCE_ROOT; };
+		2EEA4E694E914B6DB251E9E9 /* RACStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStream.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACStream.h; sourceTree = SOURCE_ROOT; };
+		30CDC500CA344791A70A26F6 /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACStringSequence.m; sourceTree = SOURCE_ROOT; };
+		31EDEC7974B04963ABCFD65B /* ENLinkNotebookRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENLinkNotebookRequest.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENLinkNotebookRequest.m"; sourceTree = SOURCE_ROOT; };
+		3282FA7CF47E481589CC9883 /* RACSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignal.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal.m; sourceTree = SOURCE_ROOT; };
+		329FEC50556F4C9692D7B2BA /* RACBinding+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACBinding+Private.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBinding+Private.h"; sourceTree = SOURCE_ROOT; };
+		32FF9385F9B24E37B582EF2D /* NSObject+RACPropertySubscribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACPropertySubscribing.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACPropertySubscribing.h"; sourceTree = SOURCE_ROOT; };
+		3470B975E7D14C5D89F315B8 /* NSString+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSupport.m"; path = "ReactiveCocoa/RACExtensions/NSString+RACSupport.m"; sourceTree = SOURCE_ROOT; };
+		356FF5E9E73140FC88C95BD1 /* RACUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnit.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACUnit.m; sourceTree = SOURCE_ROOT; };
+		3605B56208AA4656A37E3D61 /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACDelegateProxy.m; sourceTree = SOURCE_ROOT; };
+		3780AEFAF2074FE99E6166E1 /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = libextobjc/extobjc/EXTScope.m; sourceTree = SOURCE_ROOT; };
+		397BA6DD0DC94DCEAD5225AD /* ENAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENAPI.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENAPI.h"; sourceTree = SOURCE_ROOT; };
+		3A6F0ED5FA4A4AEB8CF9DC5A /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSArray+RACSequenceAdditions.m"; sourceTree = SOURCE_ROOT; };
+		3AA1D811DD2840E2ADA2C98B /* RACImmediateScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACImmediateScheduler.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACImmediateScheduler.h; sourceTree = SOURCE_ROOT; };
+		3B334A01B02A49E1A060BD51 /* EDAMLimits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMLimits.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMLimits.m"; sourceTree = SOURCE_ROOT; };
+		3B8A5CA2BCCB4F72BF24A8C6 /* RACBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBinding.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBinding.m; sourceTree = SOURCE_ROOT; };
+		3C44AE6CA680414CB33037AA /* RACValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACValueTransformer.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACValueTransformer.h; sourceTree = SOURCE_ROOT; };
+		3C4C230738A64A0D904645F3 /* RACSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptingAssignmentTrampoline.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubscriptingAssignmentTrampoline.h; sourceTree = SOURCE_ROOT; };
+		3F38A9034A9A426DB21BED2E /* RACSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubject.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubject.m; sourceTree = SOURCE_ROOT; };
+		40A1E1FBDEEB43ABA3BB26CB /* RACSignalSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignalSequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignalSequence.m; sourceTree = SOURCE_ROOT; };
+		42BBB8FBC5844853B7CE0F3C /* RACEagerSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEagerSequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEagerSequence.m; sourceTree = SOURCE_ROOT; };
+		432B3185AD9A4EA89124AD42 /* RACScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScheduler.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACScheduler.m; sourceTree = SOURCE_ROOT; };
+		43D89F720075464B89A3CAE9 /* ENMLUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENMLUtility.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/ENMLUtility.h"; sourceTree = SOURCE_ROOT; };
+		447FE97CCC3F4CDCB2B0104E /* ENCredentialStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENCredentialStore.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENCredentialStore.m"; sourceTree = SOURCE_ROOT; };
+		44F37A847676476F81DA8EDB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4A254FA72FBD4BF5BC5FC78D /* NSSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSSet+RACSequenceAdditions.h"; sourceTree = SOURCE_ROOT; };
+		4AA4400F9B0A47C6BEC45A3B /* EvernoteUserStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EvernoteUserStore.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteUserStore.m"; sourceTree = SOURCE_ROOT; };
+		4B08BCF1F74C476BB34F18E9 /* ENAuthenticationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENAuthenticationRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENAuthenticationRequest.h"; sourceTree = SOURCE_ROOT; };
+		4C5E58BE2B674EFA849D5EF9 /* RACKVOTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOTrampoline.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACKVOTrampoline.h; sourceTree = SOURCE_ROOT; };
+		4CF088989855474C85E67926 /* ENCredentials.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENCredentials.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENCredentials.m"; sourceTree = SOURCE_ROOT; };
+		521E35A8F96044DD98E3EF80 /* THTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THTTPClient.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/THTTPClient.m"; sourceTree = SOURCE_ROOT; };
+		537BAC88B498400E941AFC12 /* NSInvocation+RACTypeParsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+RACTypeParsing.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSInvocation+RACTypeParsing.m"; sourceTree = SOURCE_ROOT; };
+		5416B3A826B342B3A4A714A5 /* ENApplicationBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENApplicationBridge.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENApplicationBridge.m"; sourceTree = SOURCE_ROOT; };
+		55281265E84D4619AE5D6B61 /* RACBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBinding.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBinding.h; sourceTree = SOURCE_ROOT; };
+		55418E9A6516454EB35B66FC /* ENResourceAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENResourceAttachment.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENResourceAttachment.m"; sourceTree = SOURCE_ROOT; };
+		55A39F1AE629434FA195CEBD /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = libextobjc/extobjc/EXTRuntimeExtensions.m; sourceTree = SOURCE_ROOT; };
+		568A9BC7D4DB4725882490C9 /* NSDictionary+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RACSequenceAdditions.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSDictionary+RACSequenceAdditions.m"; sourceTree = SOURCE_ROOT; };
+		568B75ACB55D4E12A01E52BE /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACKVOWrapper.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACKVOWrapper.m"; sourceTree = SOURCE_ROOT; };
+		56E39C501B2F423D89E4A455 /* ENGCOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENGCOAuth.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/cocoa-oauth/ENGCOAuth.h"; sourceTree = SOURCE_ROOT; };
+		57A0AA3DD281426C80A5AF92 /* ENConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENConstants.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/ENConstants.m"; sourceTree = SOURCE_ROOT; };
+		583FF362D31A40E485871E6C /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		59552D99A7A04EC2BAA6361A /* TProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TProcessor.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TProcessor.h"; sourceTree = SOURCE_ROOT; };
+		5993F47EFCF74BBF8EC9F3FE /* RACDynamicSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACDynamicSequence.h; sourceTree = SOURCE_ROOT; };
+		59F235C286E948258E97A1CC /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain/SSKeychain.h; sourceTree = SOURCE_ROOT; };
+		5A237B6B3F084F4F96F9A400 /* EvernoteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EvernoteSDK.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteSDK.h"; sourceTree = SOURCE_ROOT; };
+		5A62C9ACBE374418ADD9FE48 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-prefix.pch"; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5B93C62A796D467598B83A3A /* RACCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCommand.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACCommand.h; sourceTree = SOURCE_ROOT; };
+		5EA38B20559446D080327491 /* ENCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENCredentials.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENCredentials.h"; sourceTree = SOURCE_ROOT; };
+		5EC9A689EF9D463EAE8B9F4E /* EvernoteUserStore+Extras.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EvernoteUserStore+Extras.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteUserStore+Extras.m"; sourceTree = SOURCE_ROOT; };
+		5F1D97CDDACD45C78DBD7C4C /* TException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TException.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TException.h"; sourceTree = SOURCE_ROOT; };
+		5F90D6CA2BE4446EBDAB5DEF /* NSFileHandle+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileHandle+RACSupport.h"; path = "ReactiveCocoa/RACExtensions/NSFileHandle+RACSupport.h"; sourceTree = SOURCE_ROOT; };
+		6239D8A0878642E287057D06 /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACDeallocating.h"; sourceTree = SOURCE_ROOT; };
+		63EE0A0461E14496B2196A6B /* RACScopedDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScopedDisposable.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACScopedDisposable.m; sourceTree = SOURCE_ROOT; };
+		6605F77E7F5C41C288858C4E /* RACImmediateScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACImmediateScheduler.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACImmediateScheduler.m; sourceTree = SOURCE_ROOT; };
+		663E4252466E46BE98671471 /* NSSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSSet+RACSequenceAdditions.m"; sourceTree = SOURCE_ROOT; };
+		66E941248D22421095E36ED0 /* ENNoteImportRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNoteImportRequest.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENNoteImportRequest.m"; sourceTree = SOURCE_ROOT; };
+		6819183A6D4F42F09763EF9B /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/UIControl+RACSignalSupport.h"; sourceTree = SOURCE_ROOT; };
+		6841EF9874CA41E79E0E992C /* ENConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENConstants.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/ENConstants.h"; sourceTree = SOURCE_ROOT; };
+		6AF8CFDB7070421398D93CE6 /* RACStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStream.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACStream.m; sourceTree = SOURCE_ROOT; };
+		6D168D4A12264F5395265537 /* RACStringSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStringSequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACStringSequence.h; sourceTree = SOURCE_ROOT; };
+		6E86C73E990A4AB798FFDB0A /* NSObject+RACObservablePropertySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACObservablePropertySubject.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACObservablePropertySubject.m"; sourceTree = SOURCE_ROOT; };
+		6ECFC6294FB240508C978938 /* NSData+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RACSupport.m"; path = "ReactiveCocoa/RACExtensions/NSData+RACSupport.m"; sourceTree = SOURCE_ROOT; };
+		6F6B8B3E7BC74137A402B75F /* NSString+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSequenceAdditions.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSString+RACSequenceAdditions.m"; sourceTree = SOURCE_ROOT; };
+		6FF84EB3ED2C4CD7B4ED87F5 /* EDAMUserStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMUserStore.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMUserStore.h"; sourceTree = SOURCE_ROOT; };
+		700B0B61EF6B45CE89E2781A /* EDAMTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMTypes.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMTypes.h"; sourceTree = SOURCE_ROOT; };
+		70D8380DD55A4663A635BD5F /* RACTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTuple.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACTuple.h; sourceTree = SOURCE_ROOT; };
+		70F96FF433164640A31870AD /* ENSearchRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENSearchRequest.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENSearchRequest.m"; sourceTree = SOURCE_ROOT; };
+		744FD09990164BCCA154E274 /* JRSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = SOURCE_ROOT; };
+		74688648F39E4D58A7CA661F /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RACSignalSupport.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/UITextField+RACSignalSupport.m"; sourceTree = SOURCE_ROOT; };
+		746C772797BE418DBF37D14C /* RACDynamicSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACDynamicSequence.m; sourceTree = SOURCE_ROOT; };
+		76CEAFC5D9E246C7B5F70F43 /* KSForwardingWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSForwardingWriter.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSForwardingWriter.h"; sourceTree = SOURCE_ROOT; };
+		772B7946F9E644D4936A8FFC /* TBinaryProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TBinaryProtocol.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TBinaryProtocol.h"; sourceTree = SOURCE_ROOT; };
+		7835A6E15C1A4626B4D9BA29 /* RACObservablePropertySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACObservablePropertySubject.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACObservablePropertySubject.h; sourceTree = SOURCE_ROOT; };
+		784762FACE134037A550DDEE /* RACUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnit.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACUnit.h; sourceTree = SOURCE_ROOT; };
+		7A15C3A224BA48BB8590570A /* RACPropertySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACPropertySubject.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACPropertySubject.h; sourceTree = SOURCE_ROOT; };
+		7A4A4655474E4E9F8AAC4E15 /* RACSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptingAssignmentTrampoline.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubscriptingAssignmentTrampoline.m; sourceTree = SOURCE_ROOT; };
+		7A5BA010217743F8B534331B /* TProtocolUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TProtocolUtil.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TProtocolUtil.h"; sourceTree = SOURCE_ROOT; };
+		7CA70E1EF1B94C04937F6360 /* EvernoteSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EvernoteSDK.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteSDK.m"; sourceTree = SOURCE_ROOT; };
+		7CFF5B3064E545B3A76EFAF4 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+RACSignalSupport.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/UITextView+RACSignalSupport.m"; sourceTree = SOURCE_ROOT; };
+		7E0CACC159A644539216C3CF /* EDAMNoteStoreClient+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EDAMNoteStoreClient+Utilities.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAMNoteStoreClient+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		7E2A24EA9A25453583643B15 /* ENApplicationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENApplicationRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENApplicationRequest.h"; sourceTree = SOURCE_ROOT; };
+		7E7254603B4C4349B570D86E /* RACEagerSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEagerSequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEagerSequence.h; sourceTree = SOURCE_ROOT; };
+		7F23F1B9ECB84B0CAB8B1BF2 /* ENApplicationBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENApplicationBridge.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENApplicationBridge.h"; sourceTree = SOURCE_ROOT; };
+		7F4497809C52449CB8E96F7D /* KSXMLAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSXMLAttributes.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSXMLAttributes.h"; sourceTree = SOURCE_ROOT; };
+		7F9D996E657C4F4CA4FA3544 /* EvernoteUserStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EvernoteUserStore.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteUserStore.h"; sourceTree = SOURCE_ROOT; };
+		80A863C1707C47E39CA82CCF /* RACDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDisposable.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACDisposable.m; sourceTree = SOURCE_ROOT; };
+		80C0EF26040447D0AA42121D /* NSObject+RACPropertySubscribing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACPropertySubscribing.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACPropertySubscribing.m"; sourceTree = SOURCE_ROOT; };
+		841BC9E8C5314BDBA6F9F334 /* RACQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACQueueScheduler.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACQueueScheduler.m; sourceTree = SOURCE_ROOT; };
+		853A48FE55594241BEAE24D5 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveCocoa/RACExtensions/NSNotificationCenter+RACSupport.m"; sourceTree = SOURCE_ROOT; };
+		855D11910A384192B84F33A9 /* EDAMErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EDAMErrors.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMErrors.m"; sourceTree = SOURCE_ROOT; };
+		898F2128B69540A99A78B2C3 /* RACMulticastConnection+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACMulticastConnection+Private.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACMulticastConnection+Private.h"; sourceTree = SOURCE_ROOT; };
+		8B0B0DA4DEFE48D7812DB2B1 /* EvernoteNoteStore+Extras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EvernoteNoteStore+Extras.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteNoteStore+Extras.h"; sourceTree = SOURCE_ROOT; };
+		8C171309E4F64834B8EE5F66 /* NSString+XMLAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XMLAdditions.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/NSString+XMLAdditions.h"; sourceTree = SOURCE_ROOT; };
+		8CFDA1549D2044788A3914C1 /* RACObjCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACObjCRuntime.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACObjCRuntime.h; sourceTree = SOURCE_ROOT; };
+		8E6917CCF6E642609B73124B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90BB96B1614E4CDFBB2BE801 /* RACEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEvent.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEvent.h; sourceTree = SOURCE_ROOT; };
+		90C6F0D33B4B46E6AF134581 /* NSObject+RACSelectorSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACSelectorSignal.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACSelectorSignal.h"; sourceTree = SOURCE_ROOT; };
+		90DD1295079B4833AA23AC3E /* RACSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubject.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubject.h; sourceTree = SOURCE_ROOT; };
+		9173D007C58F49EAB74E53C8 /* NSData+ENBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ENBase64.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/cocoa-oauth/NSData+ENBase64.h"; sourceTree = SOURCE_ROOT; };
+		9309381967BC4A43A6A4E2A7 /* KSXMLAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSXMLAttributes.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSXMLAttributes.m"; sourceTree = SOURCE_ROOT; };
+		93B488BA91704FC9AC59C691 /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSEnumerator+RACSequenceAdditions.h"; sourceTree = SOURCE_ROOT; };
+		959E482909184603989E9304 /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACReplaySubject.m; sourceTree = SOURCE_ROOT; };
+		95E54B05D1F347A1AD04AB72 /* KSHTMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSHTMLWriter.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSHTMLWriter.h"; sourceTree = SOURCE_ROOT; };
+		95E6DD4CEC8F4F80B10075AE /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+RACSignalSupport.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/UITextView+RACSignalSupport.h"; sourceTree = SOURCE_ROOT; };
+		98AEEC9F59554BA29161CD7E /* TObjective-C.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TObjective-C.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TObjective-C.h"; sourceTree = SOURCE_ROOT; };
+		99958A29D13448409AE82A3D /* ENCredentialStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENCredentialStore.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENCredentialStore.h"; sourceTree = SOURCE_ROOT; };
+		9BD75248B3E047C59F9C75A3 /* NSData+EvernoteSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+EvernoteSDK.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/NSData+EvernoteSDK.m"; sourceTree = SOURCE_ROOT; };
+		9DF71363D7934C2AB70A9CAC /* RACDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDisposable.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACDisposable.h; sourceTree = SOURCE_ROOT; };
+		9E36D1EFDE0948059152E517 /* ENNoteViewRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNoteViewRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENNoteViewRequest.h"; sourceTree = SOURCE_ROOT; };
+		A2A1F20F5DD248728CE263F3 /* ENAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENAPI.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/ENAPI.m"; sourceTree = SOURCE_ROOT; };
+		A2B5B73CF0774FDF807E95A7 /* NSData+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RACSupport.h"; path = "ReactiveCocoa/RACExtensions/NSData+RACSupport.h"; sourceTree = SOURCE_ROOT; };
+		A4F4C2CB986F420096DC042C /* NSData+EvernoteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+EvernoteSDK.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/NSData+EvernoteSDK.h"; sourceTree = SOURCE_ROOT; };
+		A6DD49194BA44DFAAE1A047B /* NSEnumerator+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEnumerator+RACSequenceAdditions.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSEnumerator+RACSequenceAdditions.m"; sourceTree = SOURCE_ROOT; };
+		A79BFFEEBF534C6499132B96 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/NSString+URLEncoding/NSString+URLEncoding.h"; sourceTree = SOURCE_ROOT; };
+		A7BF4DB1F4DF40BAA5D6E2BB /* RACSignalSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignalSequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignalSequence.h; sourceTree = SOURCE_ROOT; };
+		AC48C1EDEFCB499BAB3DBF6B /* UIControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RACSignalSupport.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/UIControl+RACSignalSupport.m"; sourceTree = SOURCE_ROOT; };
+		AD04D0E9CBC3414BBC7B48A1 /* NSOrderedSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSOrderedSet+RACSequenceAdditions.m"; sourceTree = SOURCE_ROOT; };
+		AE2CA926FAA74E0A9DF2709B /* EvernoteNoteStore+Extras.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EvernoteNoteStore+Extras.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteNoteStore+Extras.m"; sourceTree = SOURCE_ROOT; };
+		AE50633037D14E14936ADF8F /* RACBacktrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBacktrace.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBacktrace.h; sourceTree = SOURCE_ROOT; };
+		AEEBD16FB219440384BF231D /* NSDataBase64Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSDataBase64Additions.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/NSDataBase64Additions.m"; sourceTree = SOURCE_ROOT; };
+		AFC24E4E91DC474DBCA69EAB /* TApplicationException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TApplicationException.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TApplicationException.h"; sourceTree = SOURCE_ROOT; };
+		B05DDA4C76E44B5993EE0418 /* TTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTransport.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/TTransport.h"; sourceTree = SOURCE_ROOT; };
+		B129694D7AE14486991926BE /* RACMulticastConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACMulticastConnection.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACMulticastConnection.h; sourceTree = SOURCE_ROOT; };
+		B314C67B596047DE8F21641A /* KSHTMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSHTMLWriter.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSHTMLWriter.m"; sourceTree = SOURCE_ROOT; };
+		B425435DDF374F31B7720810 /* RACEmptySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEmptySequence.h; sourceTree = SOURCE_ROOT; };
+		B55AC782EFDB4B8FAC077991 /* RACSubscriptionScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptionScheduler.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubscriptionScheduler.h; sourceTree = SOURCE_ROOT; };
+		B580D4BA67E64BE3B9984006 /* KSWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSWriter.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSWriter.m"; sourceTree = SOURCE_ROOT; };
+		B58BBBBA7E344D60909C192F /* RACObservablePropertySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACObservablePropertySubject.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACObservablePropertySubject.m; sourceTree = SOURCE_ROOT; };
+		B62A4C78CE2349A8A9EF7674 /* RACReplaySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReplaySubject.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACReplaySubject.h; sourceTree = SOURCE_ROOT; };
+		B6D6F4BC4C3147C1AD87EC67 /* RACBehaviorSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBehaviorSubject.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBehaviorSubject.m; sourceTree = SOURCE_ROOT; };
+		B6E79B51C2454D17835F8E4F /* KSXMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSXMLWriter.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSXMLWriter.m"; sourceTree = SOURCE_ROOT; };
+		B6F5EC4A9EDC43E5BE52C88A /* TApplicationException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TApplicationException.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TApplicationException.m"; sourceTree = SOURCE_ROOT; };
+		B89F860CB5264C40AE884800 /* EvernoteNoteStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EvernoteNoteStore.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteNoteStore.m"; sourceTree = SOURCE_ROOT; };
+		B9570C49D011463985352F7A /* RACPropertySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACPropertySubject.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACPropertySubject.m; sourceTree = SOURCE_ROOT; };
+		BCB893A765B14155A051442E /* TTransportException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTransportException.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/TTransportException.h"; sourceTree = SOURCE_ROOT; };
+		BDCC044C242B4E68AB0EAF13 /* RACEmptySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySequence.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEmptySequence.m; sourceTree = SOURCE_ROOT; };
+		BE53577A17F94B2080F18170 /* StoreKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE85D161723E472A8B2D8185 /* ENNewNoteRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENNewNoteRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENNewNoteRequest.h"; sourceTree = SOURCE_ROOT; };
+		C0E8BD9C0D7C4D5983A49044 /* RACSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSwizzling.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSwizzling.m; sourceTree = SOURCE_ROOT; };
+		C0F19D8D9B2541FEB4F7429B /* UITextField+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RACSignalSupport.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/UITextField+RACSignalSupport.h"; sourceTree = SOURCE_ROOT; };
+		C30FC8DBB8714F07983230C9 /* NSDataBase64Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSDataBase64Additions.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/Utilities/NSDataBase64Additions.h"; sourceTree = SOURCE_ROOT; };
+		C55044542DDA4BA8A74FAEBF /* EDAMNoteStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMNoteStore.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMNoteStore.h"; sourceTree = SOURCE_ROOT; };
+		C5FB8139DBC24299BBDA9F4A /* RACSignal+Operations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+Operations.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal+Operations.m"; sourceTree = SOURCE_ROOT; };
+		C6464EC3D74F49399783ED2C /* TException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TException.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TException.m"; sourceTree = SOURCE_ROOT; };
+		C67B0D72CFE2438583CF88D4 /* RACGroupedSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACGroupedSignal.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACGroupedSignal.h; sourceTree = SOURCE_ROOT; };
+		C6BF8335B72E423FAD7C7518 /* NSOrderedSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSOrderedSet+RACSequenceAdditions.h"; sourceTree = SOURCE_ROOT; };
+		C6FC7662B3CA43D6AE95815D /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveCocoa/RACExtensions/NSNotificationCenter+RACSupport.h"; sourceTree = SOURCE_ROOT; };
+		C74DD9740B9E455E80F25B7C /* RACBlockTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBlockTrampoline.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBlockTrampoline.m; sourceTree = SOURCE_ROOT; };
+		C7B1D961D7B44428BC3C11E0 /* EXTConcreteProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTConcreteProtocol.m; path = libextobjc/extobjc/EXTConcreteProtocol.m; sourceTree = SOURCE_ROOT; };
+		C853B857A27B4C0BA86369BF /* RACScopedDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScopedDisposable.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACScopedDisposable.h; sourceTree = SOURCE_ROOT; };
+		CA5F7BD261B4461696FC80BE /* TProcessorFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TProcessorFactory.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/TProcessorFactory.h"; sourceTree = SOURCE_ROOT; };
+		CAB1A55BEC084BAC9314EEDC /* JRSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = SOURCE_ROOT; };
+		CB106DD610EF432B90E5828E /* RACArraySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACArraySequence.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACArraySequence.h; sourceTree = SOURCE_ROOT; };
+		CBD0366C9C6748C4941627E8 /* TMemoryBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TMemoryBuffer.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/TMemoryBuffer.h"; sourceTree = SOURCE_ROOT; };
+		CBE2AC68CDA140F9A5ECE3D9 /* ENAFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENAFURLConnectionOperation.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/AFNetworking/ENAFURLConnectionOperation.m"; sourceTree = SOURCE_ROOT; };
+		CCAF219930C941BCAED3DD05 /* NSObject+RACSelectorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACSelectorSignal.m"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACSelectorSignal.m"; sourceTree = SOURCE_ROOT; };
+		CDC979F19D7C4A6B8612CE68 /* NSArray+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RACSequenceAdditions.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSArray+RACSequenceAdditions.h"; sourceTree = SOURCE_ROOT; };
+		CFA587432DC84B88A6A6F442 /* EDAMErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAMErrors.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAMErrors.h"; sourceTree = SOURCE_ROOT; };
+		D13C7A7BA5A44114B46FFA9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D151E20E350646B689B121A8 /* RACSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriber.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubscriber.m; sourceTree = SOURCE_ROOT; };
+		D52DD15148F94A6FBC7642E7 /* NSString+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSequenceAdditions.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSString+RACSequenceAdditions.h"; sourceTree = SOURCE_ROOT; };
+		D66ED85C455649FDB2612903 /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveCocoa/RACExtensions/NSString+RACSupport.h"; sourceTree = SOURCE_ROOT; };
+		D7410F5CB25746C9913A0F12 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = libextobjc/extobjc/EXTKeyPathCoding.h; sourceTree = SOURCE_ROOT; };
+		D820BF4B96F6494BBC45E0D1 /* EDAM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EDAM.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAM/EDAM.h"; sourceTree = SOURCE_ROOT; };
+		D8EEAE99B2574264A3F87CE9 /* TMemoryBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TMemoryBuffer.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/transport/TMemoryBuffer.m"; sourceTree = SOURCE_ROOT; };
+		DB6A705219D34A68A58BAF10 /* RACCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCompoundDisposable.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACCompoundDisposable.h; sourceTree = SOURCE_ROOT; };
+		DE7574D96A24487DA5AE8A41 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-resources.sh"; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		DFF4011EF4144A71B270105E /* ReactiveCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveCocoa.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/ReactiveCocoa.h; sourceTree = SOURCE_ROOT; };
+		E058B59281F249728A5284EA /* EDAMNoteStoreClient+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EDAMNoteStoreClient+Utilities.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/EDAMNoteStoreClient+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		E174FD18D5DE42E4B9EC6F53 /* RACEventTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEventTrampoline.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEventTrampoline.m; sourceTree = SOURCE_ROOT; };
+		E2A0A591DC614D76B5060043 /* ENNewNoteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNewNoteRequest.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENNewNoteRequest.m"; sourceTree = SOURCE_ROOT; };
+		E4B78D78F4884C94BDDCBDD4 /* KSForwardingWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSForwardingWriter.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSForwardingWriter.m"; sourceTree = SOURCE_ROOT; };
+		E4D22555AE6E431588D60C8F /* RACTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTuple.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACTuple.m; sourceTree = SOURCE_ROOT; };
+		E6011EC0CD8341D988EABBC8 /* ENAFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENAFURLConnectionOperation.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/AFNetworking/ENAFURLConnectionOperation.h"; sourceTree = SOURCE_ROOT; };
+		E637495C151840F78699C09C /* EvernoteSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EvernoteSession.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteSession.h"; sourceTree = SOURCE_ROOT; };
+		E776911659344F34AE2B9465 /* RACQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACQueueScheduler.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACQueueScheduler.h; sourceTree = SOURCE_ROOT; };
+		E79B31C2B6334E8C86FAAD2F /* RACPropertySubject+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACPropertySubject+Private.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACPropertySubject+Private.h"; sourceTree = SOURCE_ROOT; };
+		E962E0864A314729A9A388F9 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/NSString+URLEncoding/NSString+URLEncoding.m"; sourceTree = SOURCE_ROOT; };
+		E975D0D63AA34BD48E1D135B /* RACGroupedSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACGroupedSignal.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACGroupedSignal.m; sourceTree = SOURCE_ROOT; };
+		E9885B80D0D14F2F83DFC169 /* Security.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		EA40EF8BAEB945C08FCC8F77 /* ENLinkNotebookRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENLinkNotebookRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENLinkNotebookRequest.h"; sourceTree = SOURCE_ROOT; };
+		EA677A36F5BF49CDAEE92EA9 /* EvernoteUserStore+Extras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EvernoteUserStore+Extras.h"; path = "Evernote-SDK-iOS/evernote-sdk-ios/EvernoteUserStore+Extras.h"; sourceTree = SOURCE_ROOT; };
+		EBA0564E62FF4D43AA50BE64 /* ENSearchRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENSearchRequest.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENSearchRequest.h"; sourceTree = SOURCE_ROOT; };
+		EFB89991FC0C4D9085DA9093 /* RACSignal+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSignal+Private.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal+Private.h"; sourceTree = SOURCE_ROOT; };
+		F15B11664351416E888F6AAE /* RACKVOTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOTrampoline.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACKVOTrampoline.m; sourceTree = SOURCE_ROOT; };
+		F1F717F42139471D8404F26C /* RACBacktrace+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACBacktrace+Private.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACBacktrace+Private.h"; sourceTree = SOURCE_ROOT; };
+		F2534717396448CC84231B5A /* RACValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACValueTransformer.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACValueTransformer.m; sourceTree = SOURCE_ROOT; };
+		F37B8C0EBD214421A81758B1 /* EvernoteBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EvernoteBridge.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/EvernoteBridge.h"; sourceTree = SOURCE_ROOT; };
+		F3B5AFB8A0F24A66BF9F69FF /* RACSignal+Operations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSignal+Operations.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSignal+Operations.h"; sourceTree = SOURCE_ROOT; };
+		F3E83FD6AC694757A79AB942 /* NSString+XMLAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XMLAdditions.m"; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/NSString+XMLAdditions.m"; sourceTree = SOURCE_ROOT; };
+		F577135F5564427A80585F8A /* RACEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEvent.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACEvent.m; sourceTree = SOURCE_ROOT; };
+		F787491B18194CAC83F9F50A /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = libextobjc/extobjc/EXTRuntimeExtensions.h; sourceTree = SOURCE_ROOT; };
+		F8AE44BDE8204E16AF812FA6 /* ENApplicationBridge_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ENApplicationBridge_Private.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENApplicationBridge_Private.h"; sourceTree = SOURCE_ROOT; };
+		F8B9D015362F4C9683100534 /* NSObject+RACObservablePropertySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACObservablePropertySubject.h"; path = "ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/NSObject+RACObservablePropertySubject.h"; sourceTree = SOURCE_ROOT; };
+		F94FB90345034EC582E8E68E /* ENNoteViewRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ENNoteViewRequest.m; path = "Evernote-SDK-iOS/evernote-sdk-ios/internal/Bridge/ENNoteViewRequest.m"; sourceTree = SOURCE_ROOT; };
+		F95E539CB51A4D85A5D97BCD /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = libextobjc/extobjc/metamacros.h; sourceTree = SOURCE_ROOT; };
+		F99EF41280064536A0A832C8 /* RACMulticastConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACMulticastConnection.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACMulticastConnection.m; sourceTree = SOURCE_ROOT; };
+		FB1B487C0A84417DA549BE29 /* RACCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCommand.m; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACCommand.m; sourceTree = SOURCE_ROOT; };
+		FCA636C9DBE64B48A642359A /* TProtocolException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TProtocolException.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/Thrift/protocol/TProtocolException.h"; sourceTree = SOURCE_ROOT; };
+		FDAF4F85915D4ACF9DE12C19 /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveCocoa/RACExtensions/NSFileHandle+RACSupport.m"; sourceTree = SOURCE_ROOT; };
+		FEE45D94443D4E48911B1316 /* RACSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriber.h; path = ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACSubscriber.h; sourceTree = SOURCE_ROOT; };
+		FFA7CBE5199F437EAEA08C29 /* KSWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSWriter.h; path = "Evernote-SDK-iOS/evernote-sdk-ios/3rdParty/KSHTMLWriter/KSWriter.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A15E974F2E3441A2A01B01B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DA74DAD8934B20B3087A87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D5ED4CB6474B9583914B20 /* EXTScope */ = {
+			isa = PBXGroup;
+			children = (
+				28EB0DCD117D4214933FCA4D /* EXTScope.h */,
+				3780AEFAF2074FE99E6166E1 /* EXTScope.m */,
+			);
+			name = EXTScope;
+			sourceTree = "<group>";
+		};
+		0A226A6B57B44FA082A3BDF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13C7A7BA5A44114B46FFA9E /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BC96BCCB70546B9ABA0EEBD /* EXTConcreteProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				151DF7E69F4A492A9C0F3CE8 /* EXTConcreteProtocol.h */,
+				C7B1D961D7B44428BC3C11E0 /* EXTConcreteProtocol.m */,
+			);
+			name = EXTConcreteProtocol;
+			sourceTree = "<group>";
+		};
+		1E63CB224F03441CB4E71809 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD37F91F7C0C438B87CE52A8 /* Evernote-SDK-iOS */,
+				3896A0B840974F258C22B8D2 /* JRSwizzle */,
+				E8C4AF1E43694D5AB9CCAD93 /* ReactiveCocoa */,
+				C745DDF4260E4683902D0A4E /* SSKeychain */,
+				202AF4EABE1B4FB3A58F109D /* libextobjc */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		202AF4EABE1B4FB3A58F109D /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				1BC96BCCB70546B9ABA0EEBD /* EXTConcreteProtocol */,
+				48C2B6C9A54F4393821D7C9C /* EXTKeyPathCoding */,
+				01D5ED4CB6474B9583914B20 /* EXTScope */,
+				F11CC1BEEBF54432A2F59587 /* RuntimeExtensions */,
+			);
+			name = libextobjc;
+			sourceTree = "<group>";
+		};
+		3896A0B840974F258C22B8D2 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				744FD09990164BCCA154E274 /* JRSwizzle.h */,
+				CAB1A55BEC084BAC9314EEDC /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		48C2B6C9A54F4393821D7C9C /* EXTKeyPathCoding */ = {
+			isa = PBXGroup;
+			children = (
+				D7410F5CB25746C9913A0F12 /* EXTKeyPathCoding.h */,
+			);
+			name = EXTKeyPathCoding;
+			sourceTree = "<group>";
+		};
+		6849DF68160A4F309C21DEA1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CDC979F19D7C4A6B8612CE68 /* NSArray+RACSequenceAdditions.h */,
+				3A6F0ED5FA4A4AEB8CF9DC5A /* NSArray+RACSequenceAdditions.m */,
+				2B41AE8E13AD404D8E5D9927 /* NSDictionary+RACSequenceAdditions.h */,
+				568A9BC7D4DB4725882490C9 /* NSDictionary+RACSequenceAdditions.m */,
+				93B488BA91704FC9AC59C691 /* NSEnumerator+RACSequenceAdditions.h */,
+				A6DD49194BA44DFAAE1A047B /* NSEnumerator+RACSequenceAdditions.m */,
+				0C0C4B51DC564477A7911798 /* NSInvocation+RACTypeParsing.h */,
+				537BAC88B498400E941AFC12 /* NSInvocation+RACTypeParsing.m */,
+				6239D8A0878642E287057D06 /* NSObject+RACDeallocating.h */,
+				2222F709602F45938D865CD1 /* NSObject+RACDeallocating.m */,
+				007A2565422346E398856331 /* NSObject+RACKVOWrapper.h */,
+				568B75ACB55D4E12A01E52BE /* NSObject+RACKVOWrapper.m */,
+				189F7B1A7D8C47E5BF1EF3BB /* NSObject+RACKVOWrapperPrivate.h */,
+				2BC80286A4CC4A73A3E72ADC /* NSObject+RACLifting.h */,
+				06355F799805491186478693 /* NSObject+RACLifting.m */,
+				F8B9D015362F4C9683100534 /* NSObject+RACObservablePropertySubject.h */,
+				6E86C73E990A4AB798FFDB0A /* NSObject+RACObservablePropertySubject.m */,
+				32FF9385F9B24E37B582EF2D /* NSObject+RACPropertySubscribing.h */,
+				80C0EF26040447D0AA42121D /* NSObject+RACPropertySubscribing.m */,
+				90C6F0D33B4B46E6AF134581 /* NSObject+RACSelectorSignal.h */,
+				CCAF219930C941BCAED3DD05 /* NSObject+RACSelectorSignal.m */,
+				C6BF8335B72E423FAD7C7518 /* NSOrderedSet+RACSequenceAdditions.h */,
+				AD04D0E9CBC3414BBC7B48A1 /* NSOrderedSet+RACSequenceAdditions.m */,
+				4A254FA72FBD4BF5BC5FC78D /* NSSet+RACSequenceAdditions.h */,
+				663E4252466E46BE98671471 /* NSSet+RACSequenceAdditions.m */,
+				D52DD15148F94A6FBC7642E7 /* NSString+RACSequenceAdditions.h */,
+				6F6B8B3E7BC74137A402B75F /* NSString+RACSequenceAdditions.m */,
+				CB106DD610EF432B90E5828E /* RACArraySequence.h */,
+				0C7DD3B8336A4E5A82AC46C4 /* RACArraySequence.m */,
+				F1F717F42139471D8404F26C /* RACBacktrace+Private.h */,
+				AE50633037D14E14936ADF8F /* RACBacktrace.h */,
+				13A201E8E43D4AC3B9997B0E /* RACBacktrace.m */,
+				0FA2A37478F84E91A6EEBC4F /* RACBehaviorSubject.h */,
+				B6D6F4BC4C3147C1AD87EC67 /* RACBehaviorSubject.m */,
+				329FEC50556F4C9692D7B2BA /* RACBinding+Private.h */,
+				55281265E84D4619AE5D6B61 /* RACBinding.h */,
+				3B8A5CA2BCCB4F72BF24A8C6 /* RACBinding.m */,
+				09B09C96868F4F23BE3B1672 /* RACBlockTrampoline.h */,
+				C74DD9740B9E455E80F25B7C /* RACBlockTrampoline.m */,
+				5B93C62A796D467598B83A3A /* RACCommand.h */,
+				FB1B487C0A84417DA549BE29 /* RACCommand.m */,
+				DB6A705219D34A68A58BAF10 /* RACCompoundDisposable.h */,
+				11509F140DA64C42919B983D /* RACCompoundDisposable.m */,
+				26D233F6E42B4D328D3BB116 /* RACDelegateProxy.h */,
+				3605B56208AA4656A37E3D61 /* RACDelegateProxy.m */,
+				9DF71363D7934C2AB70A9CAC /* RACDisposable.h */,
+				80A863C1707C47E39CA82CCF /* RACDisposable.m */,
+				5993F47EFCF74BBF8EC9F3FE /* RACDynamicSequence.h */,
+				746C772797BE418DBF37D14C /* RACDynamicSequence.m */,
+				7E7254603B4C4349B570D86E /* RACEagerSequence.h */,
+				42BBB8FBC5844853B7CE0F3C /* RACEagerSequence.m */,
+				B425435DDF374F31B7720810 /* RACEmptySequence.h */,
+				BDCC044C242B4E68AB0EAF13 /* RACEmptySequence.m */,
+				90BB96B1614E4CDFBB2BE801 /* RACEvent.h */,
+				F577135F5564427A80585F8A /* RACEvent.m */,
+				1FD9DF04BC844C579D41EE3B /* RACEventTrampoline.h */,
+				E174FD18D5DE42E4B9EC6F53 /* RACEventTrampoline.m */,
+				C67B0D72CFE2438583CF88D4 /* RACGroupedSignal.h */,
+				E975D0D63AA34BD48E1D135B /* RACGroupedSignal.m */,
+				3AA1D811DD2840E2ADA2C98B /* RACImmediateScheduler.h */,
+				6605F77E7F5C41C288858C4E /* RACImmediateScheduler.m */,
+				4C5E58BE2B674EFA849D5EF9 /* RACKVOTrampoline.h */,
+				F15B11664351416E888F6AAE /* RACKVOTrampoline.m */,
+				898F2128B69540A99A78B2C3 /* RACMulticastConnection+Private.h */,
+				B129694D7AE14486991926BE /* RACMulticastConnection.h */,
+				F99EF41280064536A0A832C8 /* RACMulticastConnection.m */,
+				8CFDA1549D2044788A3914C1 /* RACObjCRuntime.h */,
+				1E77BDEAF49D43ABBA53F8A1 /* RACObjCRuntime.m */,
+				7835A6E15C1A4626B4D9BA29 /* RACObservablePropertySubject.h */,
+				B58BBBBA7E344D60909C192F /* RACObservablePropertySubject.m */,
+				E79B31C2B6334E8C86FAAD2F /* RACPropertySubject+Private.h */,
+				7A15C3A224BA48BB8590570A /* RACPropertySubject.h */,
+				B9570C49D011463985352F7A /* RACPropertySubject.m */,
+				E776911659344F34AE2B9465 /* RACQueueScheduler.h */,
+				841BC9E8C5314BDBA6F9F334 /* RACQueueScheduler.m */,
+				B62A4C78CE2349A8A9EF7674 /* RACReplaySubject.h */,
+				959E482909184603989E9304 /* RACReplaySubject.m */,
+				14F9711C4C16453BB6FC679D /* RACScheduler+Private.h */,
+				0842C3A133AD4740856F833C /* RACScheduler.h */,
+				432B3185AD9A4EA89124AD42 /* RACScheduler.m */,
+				C853B857A27B4C0BA86369BF /* RACScopedDisposable.h */,
+				63EE0A0461E14496B2196A6B /* RACScopedDisposable.m */,
+				2283EFA0ACE9411097514E75 /* RACSequence.h */,
+				2C29F4F222664D119B501370 /* RACSequence.m */,
+				F3B5AFB8A0F24A66BF9F69FF /* RACSignal+Operations.h */,
+				C5FB8139DBC24299BBDA9F4A /* RACSignal+Operations.m */,
+				EFB89991FC0C4D9085DA9093 /* RACSignal+Private.h */,
+				1F4A00F8720A4D09A71F3346 /* RACSignal.h */,
+				3282FA7CF47E481589CC9883 /* RACSignal.m */,
+				A7BF4DB1F4DF40BAA5D6E2BB /* RACSignalSequence.h */,
+				40A1E1FBDEEB43ABA3BB26CB /* RACSignalSequence.m */,
+				2EEA4E694E914B6DB251E9E9 /* RACStream.h */,
+				6AF8CFDB7070421398D93CE6 /* RACStream.m */,
+				6D168D4A12264F5395265537 /* RACStringSequence.h */,
+				30CDC500CA344791A70A26F6 /* RACStringSequence.m */,
+				90DD1295079B4833AA23AC3E /* RACSubject.h */,
+				3F38A9034A9A426DB21BED2E /* RACSubject.m */,
+				FEE45D94443D4E48911B1316 /* RACSubscriber.h */,
+				D151E20E350646B689B121A8 /* RACSubscriber.m */,
+				3C4C230738A64A0D904645F3 /* RACSubscriptingAssignmentTrampoline.h */,
+				7A4A4655474E4E9F8AAC4E15 /* RACSubscriptingAssignmentTrampoline.m */,
+				B55AC782EFDB4B8FAC077991 /* RACSubscriptionScheduler.h */,
+				28BE57217DA04E4DA50E1FB3 /* RACSubscriptionScheduler.m */,
+				16125BA06F454EC28FAAFF6B /* RACSwizzling.h */,
+				C0E8BD9C0D7C4D5983A49044 /* RACSwizzling.m */,
+				70D8380DD55A4663A635BD5F /* RACTuple.h */,
+				E4D22555AE6E431588D60C8F /* RACTuple.m */,
+				784762FACE134037A550DDEE /* RACUnit.h */,
+				356FF5E9E73140FC88C95BD1 /* RACUnit.m */,
+				3C44AE6CA680414CB33037AA /* RACValueTransformer.h */,
+				F2534717396448CC84231B5A /* RACValueTransformer.m */,
+				DFF4011EF4144A71B270105E /* ReactiveCocoa.h */,
+				6819183A6D4F42F09763EF9B /* UIControl+RACSignalSupport.h */,
+				AC48C1EDEFCB499BAB3DBF6B /* UIControl+RACSignalSupport.m */,
+				C0F19D8D9B2541FEB4F7429B /* UITextField+RACSignalSupport.h */,
+				74688648F39E4D58A7CA661F /* UITextField+RACSignalSupport.m */,
+				95E6DD4CEC8F4F80B10075AE /* UITextView+RACSignalSupport.h */,
+				7CFF5B3064E545B3A76EFAF4 /* UITextView+RACSignalSupport.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AB1D2EC120B84157900C139D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				583FF362D31A40E485871E6C /* Foundation.framework */,
+				E9885B80D0D14F2F83DFC169 /* Security.framework */,
+				BE53577A17F94B2080F18170 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C428A5ADC56A4B038925B9AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44F37A847676476F81DA8EDB /* Pods.xcconfig */,
+				204835F4094741ED9136085B /* Pods-header.h */,
+				5A62C9ACBE374418ADD9FE48 /* Pods-prefix.pch */,
+				DE7574D96A24487DA5AE8A41 /* Pods-resources.sh */,
+				16556C6DA972497888BA07FF /* Pods-acknowledgements.plist */,
+				2423073311534FB788D7F2BF /* Pods-acknowledgements.markdown */,
+				073AE89F392E4FEE8EEB9880 /* Pods-dummy.m */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C745DDF4260E4683902D0A4E /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				59F235C286E948258E97A1CC /* SSKeychain.h */,
+				1F248BC37D23408D8FBF507E /* SSKeychain.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
+		CD37F91F7C0C438B87CE52A8 /* Evernote-SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E058B59281F249728A5284EA /* EDAMNoteStoreClient+Utilities.h */,
+				7E0CACC159A644539216C3CF /* EDAMNoteStoreClient+Utilities.m */,
+				6841EF9874CA41E79E0E992C /* ENConstants.h */,
+				57A0AA3DD281426C80A5AF92 /* ENConstants.m */,
+				8B0B0DA4DEFE48D7812DB2B1 /* EvernoteNoteStore+Extras.h */,
+				AE2CA926FAA74E0A9DF2709B /* EvernoteNoteStore+Extras.m */,
+				1EF24ED3ECC8490E9450AF76 /* EvernoteNoteStore.h */,
+				B89F860CB5264C40AE884800 /* EvernoteNoteStore.m */,
+				5A237B6B3F084F4F96F9A400 /* EvernoteSDK.h */,
+				7CA70E1EF1B94C04937F6360 /* EvernoteSDK.m */,
+				E637495C151840F78699C09C /* EvernoteSession.h */,
+				2637CC478B99466C8CCF7DCE /* EvernoteSession.m */,
+				EA677A36F5BF49CDAEE92EA9 /* EvernoteUserStore+Extras.h */,
+				5EC9A689EF9D463EAE8B9F4E /* EvernoteUserStore+Extras.m */,
+				7F9D996E657C4F4CA4FA3544 /* EvernoteUserStore.h */,
+				4AA4400F9B0A47C6BEC45A3B /* EvernoteUserStore.m */,
+				D820BF4B96F6494BBC45E0D1 /* EDAM.h */,
+				CFA587432DC84B88A6A6F442 /* EDAMErrors.h */,
+				855D11910A384192B84F33A9 /* EDAMErrors.m */,
+				24E2D4980E694F1380F50828 /* EDAMLimits.h */,
+				3B334A01B02A49E1A060BD51 /* EDAMLimits.m */,
+				C55044542DDA4BA8A74FAEBF /* EDAMNoteStore.h */,
+				0AED306A92CF49B6804F902E /* EDAMNoteStore.m */,
+				700B0B61EF6B45CE89E2781A /* EDAMTypes.h */,
+				1F9D94FA12D1429A9020C30F /* EDAMTypes.m */,
+				6FF84EB3ED2C4CD7B4ED87F5 /* EDAMUserStore.h */,
+				15FE5A8A405C4DE4AE43B14C /* EDAMUserStore.m */,
+				7F23F1B9ECB84B0CAB8B1BF2 /* ENApplicationBridge.h */,
+				5416B3A826B342B3A4A714A5 /* ENApplicationBridge.m */,
+				F8AE44BDE8204E16AF812FA6 /* ENApplicationBridge_Private.h */,
+				7E2A24EA9A25453583643B15 /* ENApplicationRequest.h */,
+				4B08BCF1F74C476BB34F18E9 /* ENAuthenticationRequest.h */,
+				1278AA21CE5A4F218E422A0C /* ENAuthenticationRequest.m */,
+				EA40EF8BAEB945C08FCC8F77 /* ENLinkNotebookRequest.h */,
+				31EDEC7974B04963ABCFD65B /* ENLinkNotebookRequest.m */,
+				BE85D161723E472A8B2D8185 /* ENNewNoteRequest.h */,
+				E2A0A591DC614D76B5060043 /* ENNewNoteRequest.m */,
+				08B97B98527E48A48A2587A7 /* ENNoteImportRequest.h */,
+				66E941248D22421095E36ED0 /* ENNoteImportRequest.m */,
+				9E36D1EFDE0948059152E517 /* ENNoteViewRequest.h */,
+				F94FB90345034EC582E8E68E /* ENNoteViewRequest.m */,
+				0EE660CA14FE4EAB8177AAA9 /* ENResourceAttachment.h */,
+				55418E9A6516454EB35B66FC /* ENResourceAttachment.m */,
+				EBA0564E62FF4D43AA50BE64 /* ENSearchRequest.h */,
+				70F96FF433164640A31870AD /* ENSearchRequest.m */,
+				F37B8C0EBD214421A81758B1 /* EvernoteBridge.h */,
+				397BA6DD0DC94DCEAD5225AD /* ENAPI.h */,
+				A2A1F20F5DD248728CE263F3 /* ENAPI.m */,
+				5EA38B20559446D080327491 /* ENCredentials.h */,
+				4CF088989855474C85E67926 /* ENCredentials.m */,
+				99958A29D13448409AE82A3D /* ENCredentialStore.h */,
+				447FE97CCC3F4CDCB2B0104E /* ENCredentialStore.m */,
+				0ADCE316A28E434085519AF1 /* ENOAuthViewController.h */,
+				190F10DB350B4A24A79192C7 /* ENOAuthViewController.m */,
+				43D89F720075464B89A3CAE9 /* ENMLUtility.h */,
+				0312A433C756479296556817 /* ENMLUtility.m */,
+				A4F4C2CB986F420096DC042C /* NSData+EvernoteSDK.h */,
+				9BD75248B3E047C59F9C75A3 /* NSData+EvernoteSDK.m */,
+				C30FC8DBB8714F07983230C9 /* NSDataBase64Additions.h */,
+				AEEBD16FB219440384BF231D /* NSDataBase64Additions.m */,
+				11A307B6E6A647E0866EC566 /* NSDate+EDAMAdditions.h */,
+				2B6257A1CFD449269DE78142 /* NSDate+EDAMAdditions.m */,
+				E6011EC0CD8341D988EABBC8 /* ENAFURLConnectionOperation.h */,
+				CBE2AC68CDA140F9A5ECE3D9 /* ENAFURLConnectionOperation.m */,
+				56E39C501B2F423D89E4A455 /* ENGCOAuth.h */,
+				1823B4D95D0F4E2181A9EE44 /* ENGCOAuth.m */,
+				9173D007C58F49EAB74E53C8 /* NSData+ENBase64.h */,
+				0F1716F6365E4BD28D9B498C /* NSData+ENBase64.m */,
+				76CEAFC5D9E246C7B5F70F43 /* KSForwardingWriter.h */,
+				E4B78D78F4884C94BDDCBDD4 /* KSForwardingWriter.m */,
+				95E54B05D1F347A1AD04AB72 /* KSHTMLWriter.h */,
+				B314C67B596047DE8F21641A /* KSHTMLWriter.m */,
+				FFA7CBE5199F437EAEA08C29 /* KSWriter.h */,
+				B580D4BA67E64BE3B9984006 /* KSWriter.m */,
+				7F4497809C52449CB8E96F7D /* KSXMLAttributes.h */,
+				9309381967BC4A43A6A4E2A7 /* KSXMLAttributes.m */,
+				08F69FF4C26846BF806C196B /* KSXMLWriter.h */,
+				B6E79B51C2454D17835F8E4F /* KSXMLWriter.m */,
+				8C171309E4F64834B8EE5F66 /* NSString+XMLAdditions.h */,
+				F3E83FD6AC694757A79AB942 /* NSString+XMLAdditions.m */,
+				A79BFFEEBF534C6499132B96 /* NSString+URLEncoding.h */,
+				E962E0864A314729A9A388F9 /* NSString+URLEncoding.m */,
+				772B7946F9E644D4936A8FFC /* TBinaryProtocol.h */,
+				003B309FD5DC494BA9BDD436 /* TBinaryProtocol.m */,
+				001FA4B1975A4821B11820BE /* TProtocol.h */,
+				FCA636C9DBE64B48A642359A /* TProtocolException.h */,
+				29028980AAD5415083BABE1B /* TProtocolException.m */,
+				1B014C691B9F4DFBA46541A3 /* TProtocolFactory.h */,
+				7A5BA010217743F8B534331B /* TProtocolUtil.h */,
+				043C6E0523754912B97B8C8C /* TProtocolUtil.m */,
+				AFC24E4E91DC474DBCA69EAB /* TApplicationException.h */,
+				B6F5EC4A9EDC43E5BE52C88A /* TApplicationException.m */,
+				5F1D97CDDACD45C78DBD7C4C /* TException.h */,
+				C6464EC3D74F49399783ED2C /* TException.m */,
+				222D10279DBE4F259D57DB6C /* Thrift.h */,
+				98AEEC9F59554BA29161CD7E /* TObjective-C.h */,
+				59552D99A7A04EC2BAA6361A /* TProcessor.h */,
+				CA5F7BD261B4461696FC80BE /* TProcessorFactory.h */,
+				1C9F7702DEB2452490862AA7 /* THTTPClient.h */,
+				521E35A8F96044DD98E3EF80 /* THTTPClient.m */,
+				CBD0366C9C6748C4941627E8 /* TMemoryBuffer.h */,
+				D8EEAE99B2574264A3F87CE9 /* TMemoryBuffer.m */,
+				B05DDA4C76E44B5993EE0418 /* TTransport.h */,
+				BCB893A765B14155A051442E /* TTransportException.h */,
+				199A5BA218D141DE8F5B2181 /* TTransportException.m */,
+			);
+			name = "Evernote-SDK-iOS";
+			sourceTree = "<group>";
+		};
+		E586F97AE6444D9EA2BA1E34 = {
+			isa = PBXGroup;
+			children = (
+				AB1D2EC120B84157900C139D /* Frameworks */,
+				1E63CB224F03441CB4E71809 /* Pods */,
+				0A226A6B57B44FA082A3BDF3 /* Products */,
+				E92001D771A945B6A325FA42 /* Targets Support Files */,
+				8E6917CCF6E642609B73124B /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		E8C4AF1E43694D5AB9CCAD93 /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				6849DF68160A4F309C21DEA1 /* Core */,
+				F68DB3B15AF240C99CF9C08E /* RACExtensions */,
+			);
+			name = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		E92001D771A945B6A325FA42 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C428A5ADC56A4B038925B9AE /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F11CC1BEEBF54432A2F59587 /* RuntimeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F95E539CB51A4D85A5D97BCD /* metamacros.h */,
+				F787491B18194CAC83F9F50A /* EXTRuntimeExtensions.h */,
+				55A39F1AE629434FA195CEBD /* EXTRuntimeExtensions.m */,
+			);
+			name = RuntimeExtensions;
+			sourceTree = "<group>";
+		};
+		F68DB3B15AF240C99CF9C08E /* RACExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2B5B73CF0774FDF807E95A7 /* NSData+RACSupport.h */,
+				6ECFC6294FB240508C978938 /* NSData+RACSupport.m */,
+				5F90D6CA2BE4446EBDAB5DEF /* NSFileHandle+RACSupport.h */,
+				FDAF4F85915D4ACF9DE12C19 /* NSFileHandle+RACSupport.m */,
+				C6FC7662B3CA43D6AE95815D /* NSNotificationCenter+RACSupport.h */,
+				853A48FE55594241BEAE24D5 /* NSNotificationCenter+RACSupport.m */,
+				D66ED85C455649FDB2612903 /* NSString+RACSupport.h */,
+				3470B975E7D14C5D89F315B8 /* NSString+RACSupport.m */,
+			);
+			name = RACExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		91F400D33A9B48E389C9E5A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D73EEC8BAB434BA12DF928 /* EDAMNoteStoreClient+Utilities.h in Headers */,
+				ED1EAD2234B646EB833A9172 /* ENConstants.h in Headers */,
+				1AE5D306A08B46C8B9634BA3 /* EvernoteNoteStore+Extras.h in Headers */,
+				2EC68F4C73A248B5AFFE6C79 /* EvernoteNoteStore.h in Headers */,
+				8A25007C488A426E8CAB60F7 /* EvernoteSDK.h in Headers */,
+				6B3B2E9B6E564F02986D86F4 /* EvernoteSession.h in Headers */,
+				7AEAC48AA6F54BEBA73070F3 /* EvernoteUserStore+Extras.h in Headers */,
+				032E5AE13C734C9DA8213D81 /* EvernoteUserStore.h in Headers */,
+				CD2CC58F6E3E4B7BA87CDBB1 /* EDAM.h in Headers */,
+				21DF662198294172B3BC7618 /* EDAMErrors.h in Headers */,
+				62395F71E17F4E0FB0141246 /* EDAMLimits.h in Headers */,
+				0FF241E4F4F1461D8BF9337F /* EDAMNoteStore.h in Headers */,
+				68E652DEFE2640F2880F75C2 /* EDAMTypes.h in Headers */,
+				383E06623EEB4D01B16A98D3 /* EDAMUserStore.h in Headers */,
+				294C0EAC292047CA9ED9B78E /* ENApplicationBridge.h in Headers */,
+				624A47A97D0147AD8DBB5B1B /* ENApplicationBridge_Private.h in Headers */,
+				B999A0AB6FA645FDB79D8B51 /* ENApplicationRequest.h in Headers */,
+				9003E4EA34CB43E99A6482D5 /* ENAuthenticationRequest.h in Headers */,
+				8AA6990A4BEE4145AFE41AC6 /* ENLinkNotebookRequest.h in Headers */,
+				2E6B676581AF49F7A62E1C0E /* ENNewNoteRequest.h in Headers */,
+				031E5DA5A67F4BA5B939408D /* ENNoteImportRequest.h in Headers */,
+				F17F17310EE84CD1863653AC /* ENNoteViewRequest.h in Headers */,
+				C7B19E510FBF44DBB7C372A1 /* ENResourceAttachment.h in Headers */,
+				0B686414F48A44A0AB43C39A /* ENSearchRequest.h in Headers */,
+				0063F9E9C4FA420AAA1F8D80 /* EvernoteBridge.h in Headers */,
+				734D6F48421A47AC877ECAF2 /* ENAPI.h in Headers */,
+				584BB258E4C94DE8A7FEB68E /* ENCredentials.h in Headers */,
+				6D286CAC580642169BC4013A /* ENCredentialStore.h in Headers */,
+				818B5AFB3BD243B89670D635 /* ENOAuthViewController.h in Headers */,
+				CAACA9E462DC4B8BB54BE1FB /* ENMLUtility.h in Headers */,
+				1B72C68976904B28BC8995C8 /* NSData+EvernoteSDK.h in Headers */,
+				9A5C83846974448FAD38AC09 /* NSDataBase64Additions.h in Headers */,
+				86F99BBD89014E2D8EE19E62 /* NSDate+EDAMAdditions.h in Headers */,
+				A80F3DBE724C409385023AE4 /* ENAFURLConnectionOperation.h in Headers */,
+				AD1194A6F3A84EC3B66602A6 /* ENGCOAuth.h in Headers */,
+				E2C62AFE184B4112B18325DA /* NSData+ENBase64.h in Headers */,
+				90AA2B3247754C21A39501FC /* KSForwardingWriter.h in Headers */,
+				3B92AD8CE8F644DEB4D8C104 /* KSHTMLWriter.h in Headers */,
+				80872ACCA68A4A33AA13B856 /* KSWriter.h in Headers */,
+				813BA1FDE6684F79AE81BDDE /* KSXMLAttributes.h in Headers */,
+				F50E356341FE4D64B44790EE /* KSXMLWriter.h in Headers */,
+				67030D7F5DB3440999A52209 /* NSString+XMLAdditions.h in Headers */,
+				8FDB6C8DF58E45C08F52B3FB /* NSString+URLEncoding.h in Headers */,
+				1851DECEEF254568B07DEB9F /* TBinaryProtocol.h in Headers */,
+				CD883497E9D1454488A96934 /* TProtocol.h in Headers */,
+				609310AC3ECB40408EB8B05A /* TProtocolException.h in Headers */,
+				5EB5F251529042FC922F1FEB /* TProtocolFactory.h in Headers */,
+				47DDE5ED976F47688BA396E2 /* TProtocolUtil.h in Headers */,
+				7BCCE1D2073B4CD5B37FDF7D /* TApplicationException.h in Headers */,
+				2A361E9FEAB2417FAA1DD2C0 /* TException.h in Headers */,
+				7B6C7F486904479387521B0E /* Thrift.h in Headers */,
+				9B865D5D1E3D4B3D9D69AF21 /* TObjective-C.h in Headers */,
+				607367B382FF4892B61C1B04 /* TProcessor.h in Headers */,
+				E6E2EA85C9CD46EAADEB2B83 /* TProcessorFactory.h in Headers */,
+				11ECD316A04846C593C877B0 /* THTTPClient.h in Headers */,
+				79A58C2B8DF6480EB5168107 /* TMemoryBuffer.h in Headers */,
+				E5466CBCC2B24765AC0AD9F9 /* TTransport.h in Headers */,
+				F747F82368AE4EA18807ED8E /* TTransportException.h in Headers */,
+				3B20CF22CC8D4DE2ACA0EC02 /* JRSwizzle.h in Headers */,
+				FDE29561E96C4B66971FE774 /* NSArray+RACSequenceAdditions.h in Headers */,
+				2F7FC65D97AD491EAAEA6B86 /* NSDictionary+RACSequenceAdditions.h in Headers */,
+				833E5293A5144847882317B7 /* NSEnumerator+RACSequenceAdditions.h in Headers */,
+				5BC4CC941A294F889387AD51 /* NSInvocation+RACTypeParsing.h in Headers */,
+				7BD6C6EE7FA642EA9CA08D47 /* NSObject+RACDeallocating.h in Headers */,
+				8ABCC64D265F4F63B1C077A0 /* NSObject+RACKVOWrapper.h in Headers */,
+				3145599791CC4528B5CABD06 /* NSObject+RACKVOWrapperPrivate.h in Headers */,
+				F88E76DD0EB6481695885F3F /* NSObject+RACLifting.h in Headers */,
+				2D054E19BE854CB3BF66D818 /* NSObject+RACObservablePropertySubject.h in Headers */,
+				EEDBBBD6A31D478B89FC6F1C /* NSObject+RACPropertySubscribing.h in Headers */,
+				9698DC4983504DE5AFFAE047 /* NSObject+RACSelectorSignal.h in Headers */,
+				047B6012E8F34EBEBA3FC392 /* NSOrderedSet+RACSequenceAdditions.h in Headers */,
+				FB9622E7DC0C4A948C5E7BB1 /* NSSet+RACSequenceAdditions.h in Headers */,
+				0EBF5404E5044A63A2346812 /* NSString+RACSequenceAdditions.h in Headers */,
+				377FBB0A97AD4383B051285A /* RACArraySequence.h in Headers */,
+				D5CC7B61404545228CEA44FF /* RACBacktrace+Private.h in Headers */,
+				E20F8EC4D88C47879C6CE40F /* RACBacktrace.h in Headers */,
+				788D2C6B0213484CAC117235 /* RACBehaviorSubject.h in Headers */,
+				5FC72E744C424B27BA5B400B /* RACBinding+Private.h in Headers */,
+				4885ADB35AC74333946538EF /* RACBinding.h in Headers */,
+				C3C17FA6164745D1950C0A24 /* RACBlockTrampoline.h in Headers */,
+				9D9DE08AE33E418F83AF2A63 /* RACCommand.h in Headers */,
+				29A3CB487CF849059DCD8FDE /* RACCompoundDisposable.h in Headers */,
+				71E995F262164B189085DF07 /* RACDelegateProxy.h in Headers */,
+				FD5C03389B274F51BDD380A2 /* RACDisposable.h in Headers */,
+				FD1201B2E3F648468CB0425E /* RACDynamicSequence.h in Headers */,
+				569168B87F1C42079BC56AC1 /* RACEagerSequence.h in Headers */,
+				D77DF9470CB24C1B93DCD7BD /* RACEmptySequence.h in Headers */,
+				3D4BCEAB5D084B15B124642C /* RACEvent.h in Headers */,
+				9E13D589D00C49C7B48D5C34 /* RACEventTrampoline.h in Headers */,
+				9FED4830711C455F83493858 /* RACGroupedSignal.h in Headers */,
+				35F50D16E31D4BB7A487F720 /* RACImmediateScheduler.h in Headers */,
+				80B1772AE9A442E3BD295893 /* RACKVOTrampoline.h in Headers */,
+				B49A9E9C83334894BCAC9390 /* RACMulticastConnection+Private.h in Headers */,
+				4983DB75EE054DC3A39CDE16 /* RACMulticastConnection.h in Headers */,
+				73DF6C99BA404A0BB8409635 /* RACObjCRuntime.h in Headers */,
+				17903B5F68814734B3C0D7C0 /* RACObservablePropertySubject.h in Headers */,
+				9DF416052B9445419B022199 /* RACPropertySubject+Private.h in Headers */,
+				85398C1043F94F80BE880F32 /* RACPropertySubject.h in Headers */,
+				EBCAEF0AB3B44FE7A5592021 /* RACQueueScheduler.h in Headers */,
+				A60C83D3B33540B287D7C8A5 /* RACReplaySubject.h in Headers */,
+				06053DA16C2440C484994672 /* RACScheduler+Private.h in Headers */,
+				86B8EE5E9C454D439CD1B9B8 /* RACScheduler.h in Headers */,
+				12A0816EBFB447CEA0D1255E /* RACScopedDisposable.h in Headers */,
+				C5992D19BEDC411497370121 /* RACSequence.h in Headers */,
+				F1DF578AA1274D39847ADCF1 /* RACSignal+Operations.h in Headers */,
+				1D8D8A5C1FB04F63B937DF6A /* RACSignal+Private.h in Headers */,
+				DB6971397A534B519E5F83F9 /* RACSignal.h in Headers */,
+				B90FECE4FD6142558076294C /* RACSignalSequence.h in Headers */,
+				3A8BE32924BB4883A4B7DCCD /* RACStream.h in Headers */,
+				0E25BC904F0542198CDB84AF /* RACStringSequence.h in Headers */,
+				932C55921E144443A64A54AE /* RACSubject.h in Headers */,
+				713FC66AC23B48308379E4CD /* RACSubscriber.h in Headers */,
+				E58DA4CD288A46CE9874E0E4 /* RACSubscriptingAssignmentTrampoline.h in Headers */,
+				D1C15208626C4B92856BF425 /* RACSubscriptionScheduler.h in Headers */,
+				D43D89D6495D49A2B0DF45F9 /* RACSwizzling.h in Headers */,
+				9EB4CC9343014D1EB72B3AC1 /* RACTuple.h in Headers */,
+				728B1DC6F1BF49FEB61E7119 /* RACUnit.h in Headers */,
+				F2D50484D52B434FB0DB27A9 /* RACValueTransformer.h in Headers */,
+				BE9F247AA3A84E79B08A81A5 /* ReactiveCocoa.h in Headers */,
+				9192A8ECD1364DDBB64E74CD /* UIControl+RACSignalSupport.h in Headers */,
+				D64E91609E6A4B86A279FB54 /* UITextField+RACSignalSupport.h in Headers */,
+				880AC55F893D49869E6270D3 /* UITextView+RACSignalSupport.h in Headers */,
+				6419F0DBF2CB45A5BF56E278 /* NSData+RACSupport.h in Headers */,
+				1CF385D627FB4D36850A2CBA /* NSFileHandle+RACSupport.h in Headers */,
+				4ECF8600C72B4176853F592B /* NSNotificationCenter+RACSupport.h in Headers */,
+				7D90CAF8A01541608F5AEF1F /* NSString+RACSupport.h in Headers */,
+				064476E32647421FBC89086A /* SSKeychain.h in Headers */,
+				86FE427F23C94FC089D2B607 /* EXTConcreteProtocol.h in Headers */,
+				B6D3D4D042D543BFBE1AEE09 /* EXTKeyPathCoding.h in Headers */,
+				C9AAFB234FF34C06ACE1D4B5 /* EXTScope.h in Headers */,
+				2C66D5DC8F0D4DFDB4451B9E /* metamacros.h in Headers */,
+				F6A8EAF300E74803B17BE892 /* EXTRuntimeExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45544C4A0E3B4F65AC68088B /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC48383D57346DA920E73A1 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				11310D8A4FBC460D987FBB31 /* Sources */,
+				A15E974F2E3441A2A01B01B2 /* Frameworks */,
+				91F400D33A9B48E389C9E5A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = D13C7A7BA5A44114B46FFA9E /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D9B9D8345D461E8E34F77A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = A1C9B125DD26484E9B23F1E5 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E586F97AE6444D9EA2BA1E34;
+			productRefGroup = 0A226A6B57B44FA082A3BDF3 /* Products */;
+			projectReferences = (
+			);
+			targets = (
+				45544C4A0E3B4F65AC68088B /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11310D8A4FBC460D987FBB31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C14C0317C3B4B5CAD7BAA58 /* EDAMNoteStoreClient+Utilities.m in Sources */,
+				B60ECB37FDF1441EB8005DAD /* ENConstants.m in Sources */,
+				341B85409B3B444DBC0E4EA3 /* EvernoteNoteStore+Extras.m in Sources */,
+				499EF5AD3B5F4BAEBF0955F8 /* EvernoteNoteStore.m in Sources */,
+				6133323C985D46DEA2B17932 /* EvernoteSDK.m in Sources */,
+				F35EC1DD5A2B41B1B95562A6 /* EvernoteSession.m in Sources */,
+				04107A0F8B9B43F6B5290D64 /* EvernoteUserStore+Extras.m in Sources */,
+				FAC13CD521FB46C883B8B473 /* EvernoteUserStore.m in Sources */,
+				6F80F740FD96499EA1AED18B /* EDAMErrors.m in Sources */,
+				F881A54D4B4240CCA856E018 /* EDAMLimits.m in Sources */,
+				AA9A70C6C88148718CD0E15C /* EDAMNoteStore.m in Sources */,
+				26A3F36F0C94408988C80B6C /* EDAMTypes.m in Sources */,
+				1533565F1458498B908BF62B /* EDAMUserStore.m in Sources */,
+				16DF70583E674EF2889D79E2 /* ENApplicationBridge.m in Sources */,
+				F8013753B26348FC96EEAC0C /* ENAuthenticationRequest.m in Sources */,
+				802760FC2A514374881AF95E /* ENLinkNotebookRequest.m in Sources */,
+				A6F9B79042724CC9B065F4DC /* ENNewNoteRequest.m in Sources */,
+				84776322F63143F9B346F9C0 /* ENNoteImportRequest.m in Sources */,
+				29F5AA86191F43C98FFE7361 /* ENNoteViewRequest.m in Sources */,
+				DE7A1FE5B66D474DB744FC7C /* ENResourceAttachment.m in Sources */,
+				1985256CB907402DB5917952 /* ENSearchRequest.m in Sources */,
+				F1115309233F483AA02A23C0 /* ENAPI.m in Sources */,
+				EFB8CDDAD2C3463A965D48BB /* ENCredentials.m in Sources */,
+				79D23FD11BC146869167FC34 /* ENCredentialStore.m in Sources */,
+				7D5EA6E5A7D248538CABED43 /* ENOAuthViewController.m in Sources */,
+				12F52A429D424980974B9585 /* ENMLUtility.m in Sources */,
+				F7428BE75442473FB0869AD0 /* NSData+EvernoteSDK.m in Sources */,
+				1A5F68DB72FC4EF2B03FADCA /* NSDataBase64Additions.m in Sources */,
+				8A9AA7AD469F400F9FA5ABCB /* NSDate+EDAMAdditions.m in Sources */,
+				60ED5C4B847B4284BDE7E2D2 /* ENAFURLConnectionOperation.m in Sources */,
+				D5293A860D40449498D61807 /* ENGCOAuth.m in Sources */,
+				6535B9AB7BB941E08A00001D /* NSData+ENBase64.m in Sources */,
+				960913E3FFAC407E867ACB9A /* KSForwardingWriter.m in Sources */,
+				0A18659BE9294FAFB665789B /* KSHTMLWriter.m in Sources */,
+				4D5604448ECB43CD8D6115D8 /* KSWriter.m in Sources */,
+				61184074212E487DB5F7383A /* KSXMLAttributes.m in Sources */,
+				945ABE4BF10C4944AD1ABD1D /* KSXMLWriter.m in Sources */,
+				6FCD8A4899114D3489EF46C3 /* NSString+XMLAdditions.m in Sources */,
+				12E08196CE054122B4D4DC52 /* NSString+URLEncoding.m in Sources */,
+				77AC2FA87BDC4A7B9FAC2879 /* TBinaryProtocol.m in Sources */,
+				151B5694E34E4A6DB30883C3 /* TProtocolException.m in Sources */,
+				B5856865672F44A58673FA8E /* TProtocolUtil.m in Sources */,
+				FB5CDF2B5E9045AEA4A16CEB /* TApplicationException.m in Sources */,
+				D1DD734BD6164D458EB5F0B2 /* TException.m in Sources */,
+				08B95CAB78A04DFEB6AC5964 /* THTTPClient.m in Sources */,
+				AF24FACF80A24F8D9714A520 /* TMemoryBuffer.m in Sources */,
+				84F630B4A720466C9E16F297 /* TTransportException.m in Sources */,
+				5551DC7C7D7F4A8EB1982077 /* JRSwizzle.m in Sources */,
+				D91F0CD9AC074BDA966A0B11 /* NSArray+RACSequenceAdditions.m in Sources */,
+				4776F13FFB6D4E8CB2D44301 /* NSDictionary+RACSequenceAdditions.m in Sources */,
+				7A0CB381806C43F7886F0607 /* NSEnumerator+RACSequenceAdditions.m in Sources */,
+				98E5973AD0174349B0A47346 /* NSInvocation+RACTypeParsing.m in Sources */,
+				E6184B0F7F614C6DA1548482 /* NSObject+RACDeallocating.m in Sources */,
+				05F015BE5C7346EFA0046A01 /* NSObject+RACKVOWrapper.m in Sources */,
+				E9FF58340D4842218401B9F8 /* NSObject+RACLifting.m in Sources */,
+				F86FA0A4315843CC8FEE50B8 /* NSObject+RACObservablePropertySubject.m in Sources */,
+				F3205124535F4F70868950DF /* NSObject+RACPropertySubscribing.m in Sources */,
+				32103727BCD9469C99CE78BC /* NSObject+RACSelectorSignal.m in Sources */,
+				BC6678E951A04B97BD19200B /* NSOrderedSet+RACSequenceAdditions.m in Sources */,
+				EDBCD082170B4A1C8CA529EC /* NSSet+RACSequenceAdditions.m in Sources */,
+				F61F806FA14C4BC7894C67DE /* NSString+RACSequenceAdditions.m in Sources */,
+				8F5EF4DBF45A4D32AAA61048 /* RACArraySequence.m in Sources */,
+				7D9F54FC7C724D1F82807047 /* RACBacktrace.m in Sources */,
+				F54F47CA4A8F4FC18D8BEF1B /* RACBehaviorSubject.m in Sources */,
+				59E3706E835C41159AA86FCA /* RACBinding.m in Sources */,
+				31066BF2B80E434193B88C6A /* RACBlockTrampoline.m in Sources */,
+				725C552AF62F4766B6A9F3E6 /* RACCommand.m in Sources */,
+				258F936576F44C2BBAAE0A92 /* RACCompoundDisposable.m in Sources */,
+				B20021FBE94A43EF919AF263 /* RACDelegateProxy.m in Sources */,
+				A5511E27ABD946129B8E61B2 /* RACDisposable.m in Sources */,
+				1F497DC96E2845E388D374F1 /* RACDynamicSequence.m in Sources */,
+				3FA50864242F44359B620FE9 /* RACEagerSequence.m in Sources */,
+				1950C37F6FA54C049F3D96D6 /* RACEmptySequence.m in Sources */,
+				4F696CCB11FE4CAEA49CCA2E /* RACEvent.m in Sources */,
+				5FCE243379604581A32EAFE8 /* RACEventTrampoline.m in Sources */,
+				E1E48D8D66F648BEAC034B12 /* RACGroupedSignal.m in Sources */,
+				DF4C65C65A87458286338CB3 /* RACImmediateScheduler.m in Sources */,
+				D282FA3C32B24BD28A070975 /* RACKVOTrampoline.m in Sources */,
+				D92BB235587E4F8188FB5C5B /* RACMulticastConnection.m in Sources */,
+				39C18FB91869468FBAEBCDAD /* RACObjCRuntime.m in Sources */,
+				BB70B1D13BE74EFE99A96F19 /* RACObservablePropertySubject.m in Sources */,
+				D7425FDC33EB4E42A64CAE18 /* RACPropertySubject.m in Sources */,
+				52C1A90952754F1DA5FEF27A /* RACQueueScheduler.m in Sources */,
+				A8C8DD78FFFB49AA97DEA99F /* RACReplaySubject.m in Sources */,
+				C5D0769A2A1240159FDBE6CD /* RACScheduler.m in Sources */,
+				1A81F6E4CDEA45BC8C4FF3D9 /* RACScopedDisposable.m in Sources */,
+				F4220A29699D4F0EB20B1784 /* RACSequence.m in Sources */,
+				FECF9239709C4F44A818CEB8 /* RACSignal+Operations.m in Sources */,
+				3986A10B4772471B852CDEE7 /* RACSignal.m in Sources */,
+				2F75F38B136743FD814DF096 /* RACSignalSequence.m in Sources */,
+				AD8C2051BBF24C17896C28E9 /* RACStream.m in Sources */,
+				3B14421974F045BAB286E271 /* RACStringSequence.m in Sources */,
+				F02C3D7F665D478C8DF235A1 /* RACSubject.m in Sources */,
+				442C4EA5D3F04AF3A96E7693 /* RACSubscriber.m in Sources */,
+				FB4393CC55FA4A58AD74EB68 /* RACSubscriptingAssignmentTrampoline.m in Sources */,
+				2355C3950944452A9DA4D521 /* RACSubscriptionScheduler.m in Sources */,
+				B593320C0E6E4EB99966C0B7 /* RACSwizzling.m in Sources */,
+				315C24205BC64E7E8CC08C32 /* RACTuple.m in Sources */,
+				DC711C3BA4A14FB68C1CAF79 /* RACUnit.m in Sources */,
+				0E5EB4BA03154735A413C112 /* RACValueTransformer.m in Sources */,
+				09D942FBD67F436D964EBC81 /* UIControl+RACSignalSupport.m in Sources */,
+				AF077C4A4F1E40F294B2A039 /* UITextField+RACSignalSupport.m in Sources */,
+				54FB45C466A749309E9872E2 /* UITextView+RACSignalSupport.m in Sources */,
+				C947C74FF3C649F6AD5DF9B2 /* NSData+RACSupport.m in Sources */,
+				3757BC4EBAF44E3E8A6C054E /* NSFileHandle+RACSupport.m in Sources */,
+				E6FA792AF3544F8F9EC6103D /* NSNotificationCenter+RACSupport.m in Sources */,
+				BA8162DEEB684658B6BE348B /* NSString+RACSupport.m in Sources */,
+				661A8E228370404D84B12D93 /* SSKeychain.m in Sources */,
+				0567F46232044B5892EE4CBF /* EXTConcreteProtocol.m in Sources */,
+				C9D480B562B04F2D820D49F5 /* EXTScope.m in Sources */,
+				686FBB70E98A411AB50BBD37 /* EXTRuntimeExtensions.m in Sources */,
+				DB080CD55D8943F7BAB97A13 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		43B3B5F40C1D4BA39E269BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F37A847676476F81DA8EDB /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7938443D80774114B54EC739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		E7FDC6267A274885883ABEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FAF95D4BD5ED45D3871AB94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F37A847676476F81DA8EDB /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C9B125DD26484E9B23F1E5 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7938443D80774114B54EC739 /* Release */,
+				E7FDC6267A274885883ABEBB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC48383D57346DA920E73A1 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B3B5F40C1D4BA39E269BA3 /* Release */,
+				FAF95D4BD5ED45D3871AB94C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49D9B9D8345D461E8E34F77A /* Project object */;
+}
