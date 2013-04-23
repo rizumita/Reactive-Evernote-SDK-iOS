@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "Reactive-Evernote-SDK-iOS"
   s.version      = "0.0.1"
-  s.summary      = "Evernote SDK iOS with ReactiveCocoa"
+  s.summary      = "Evernote SDK iOS with ReactiveCocoa."
   s.homepage     = "https://github.com/rizumita/Reactive-Evernote-SDK-iOS"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Ryoichi Izumita" => "r.izumita@caph.jp" }
