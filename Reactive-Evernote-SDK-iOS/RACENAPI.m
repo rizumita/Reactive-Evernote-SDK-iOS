@@ -22,7 +22,10 @@
 
 - (EDAMNoteStoreClient *)noteStore
 {
-    return [self.session noteStore];
+    if (_noteStore) return _noteStore;
+
+    _noteStore = [self.session noteStore];
+    return _noteStore;
 }
 
 - (EDAMUserStoreClient *)userStore
@@ -152,15 +155,17 @@
 {
     // See if we can trigger OAuth automatically
     BOOL didTriggerAuth = NO;
-    if([EvernoteSession isTokenExpiredWithError:error]) {
+    if ([EvernoteSession isTokenExpiredWithError:error]) {
         [self.session logout];
-        UIViewController* topVC = [UIApplication sharedApplication].keyWindow.rootViewController;
-        if(!topVC.presentedViewController && topVC.isViewLoaded) {
+        UIViewController *topVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+        if (!topVC.presentedViewController && topVC.isViewLoaded) {
             didTriggerAuth = YES;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.session authenticateWithViewController:topVC completionHandler:^(NSError *authError) {
-                    if(authError){
+                    if (authError) {
                         [subscriber sendError:authError];
+                    } else {
+                        [subscriber sendError:[NSError errorWithDomain:EvernoteSDKErrorDomain code:-1 userInfo:nil]];
                     }
                 }];
             });
@@ -168,7 +173,7 @@
 
     }
     // If we were not able to trigger auth, send the error over to the client
-    if(didTriggerAuth==NO) {
+    if (didTriggerAuth == NO) {
         [subscriber sendError:error];
     }
 }

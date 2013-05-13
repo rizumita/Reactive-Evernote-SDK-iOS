@@ -24,6 +24,8 @@
 /** Get an instance of the current note store client.*/
 -  (EDAMNoteStoreClient*)currentNoteStore;
 
+- (NSString *)authenticationToken;
+
 /** Get an instance of a notestore for a linked notebook. This can be used for shared notebooks.
 
  @param notebook The linked notebook

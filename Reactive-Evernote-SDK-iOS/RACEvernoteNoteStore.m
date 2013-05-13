@@ -21,7 +21,7 @@
 
 + (instancetype)noteStore
 {
-    RACEvernoteNoteStore *noteStore = [[RACEvernoteNoteStore alloc] initWithSession:[EvernoteSession sharedSession]];
+    RACEvernoteNoteStore *noteStore = [[self alloc] initWithSession:[EvernoteSession sharedSession]];
     noteStore.isBusiness = NO;
     noteStore.linkedNotebook = nil;
     return noteStore;
@@ -29,7 +29,7 @@
 
 + (instancetype)businessNoteStore
 {
-    RACEvernoteNoteStore *noteStore = [[RACEvernoteNoteStore alloc] initWithSession:[EvernoteSession sharedSession]];
+    RACEvernoteNoteStore *noteStore = [[self alloc] initWithSession:[EvernoteSession sharedSession]];
     noteStore.isBusiness = YES;
     noteStore.linkedNotebook = nil;
     return noteStore;
@@ -37,7 +37,7 @@
 
 + (instancetype)noteStoreForLinkedNotebook:(EDAMLinkedNotebook *)notebook
 {
-    RACEvernoteNoteStore *noteStore = [[RACEvernoteNoteStore alloc] initWithSession:[EvernoteSession sharedSession]];
+    RACEvernoteNoteStore *noteStore = [[self alloc] initWithSession:[EvernoteSession sharedSession]];
     noteStore.isBusiness = NO;
     noteStore.linkedNotebook = notebook;
     return noteStore;

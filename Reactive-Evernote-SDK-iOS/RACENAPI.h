@@ -11,7 +11,7 @@
 @interface RACENAPI : NSObject
 
 @property (nonatomic, strong) EvernoteSession *session;
-@property (weak, nonatomic, readonly) EDAMNoteStoreClient *noteStore;
+@property (strong, nonatomic) EDAMNoteStoreClient *noteStore;
 @property (weak, nonatomic, readonly) EDAMUserStoreClient *userStore;
 @property (weak, nonatomic, readonly) EDAMNoteStoreClient *businessNoteStore;
 

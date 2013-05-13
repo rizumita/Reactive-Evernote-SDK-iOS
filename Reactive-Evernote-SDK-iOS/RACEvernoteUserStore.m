@@ -63,7 +63,7 @@
     @weakify(self);
     return [self signalWithIdBlock:^id {
         @strongify(self);
-        return [self.userStore getPublicUserInfo:[[EvernoteSession sharedSession] authenticationToken]];
+        return [self.userStore getPublicUserInfo:username];
     }];
 }
 
