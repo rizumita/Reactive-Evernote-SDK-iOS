@@ -326,7 +326,7 @@ For example, the following code:
         [loginSignal subscribeError:^(NSError *error) {
             @strongify(self);
             [self presentError:error];
-        } completed:{
+        } completed:^{
             @strongify(self);
             self.loggedIn = YES;
         }];
@@ -466,13 +466,17 @@ RACSequence *results = [[strings.rac_sequence
     }];
 ```
 
+## System Requirements
+
+ReactiveCocoa supports OS X 10.7+ and iOS 5.0+.
+
 ## Importing ReactiveCocoa
 
 To add RAC to your application:
 
  1. Add the ReactiveCocoa repository as a submodule of your application's
-    repository. Make sure to update the submodules within with `git submodule update
-    -i --recursive`
+    repository.
+ 1. Run `script/bootstrap` from within the ReactiveCocoa folder.
  1. Drag and drop `ReactiveCocoaFramework/ReactiveCocoa.xcodeproj` into your
     application's Xcode project or workspace.
  1. On the "Build Phases" tab of your application target, add RAC to the "Link
@@ -481,7 +485,7 @@ To add RAC to your application:
     * **On OS X**, add `ReactiveCocoa.framework`. RAC must also be added to any
       "Copy Frameworks" build phase. If you don't already have one, simply add
       a "Copy Files" build phase and target the "Frameworks" destination.
- 1. Add `$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include
+ 1. Add `"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include"
     $(inherited)` to the "Header Search Paths" build setting (this is only
     necessary for archive builds, but it has no negative effect otherwise).
  1. **For iOS targets**, add `-ObjC` to the "Other Linker Flags" build setting.
