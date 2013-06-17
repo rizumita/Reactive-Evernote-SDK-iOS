@@ -306,6 +306,7 @@
 
 - (void)logout
 {
+    NSString* authToken = [[EvernoteSession sharedSession] authenticationToken];
     // remove all credentials from the store and keychain
     [self.credentialStore clearAllCredentials];
     
@@ -323,6 +324,9 @@
     
     // Clear all clients
     [self clearAllClients];
+    
+    // Revoke the token, this is not necessary, but it's good practice
+    [[EvernoteUserStore userStore] revokeLongSessionWithAuthenticationToken:authToken success:nil failure:nil];
 }
 
 - (void) clearAllClients {
@@ -543,9 +547,15 @@
         if (statusCode != 200) {
             NSLog(@"Received error HTTP response code: %d", statusCode);
             NSLog(@"%@", string);
-            [self completeAuthenticationWithError:[NSError errorWithDomain:EvernoteSDKErrorDomain
-                                                           code:EvernoteSDKErrorCode_TRANSPORT_ERROR 
-                                                       userInfo:nil]];
+            NSDictionary* userInfo = nil;
+            if(statusCode) {
+                NSNumber* statusCodeNumber = [NSNumber numberWithInteger:statusCode];
+                userInfo = @{@"statusCode": statusCodeNumber};
+            }
+            [self completeAuthenticationWithError:
+             [NSError errorWithDomain:EvernoteSDKErrorDomain
+                                 code:EvernoteSDKErrorCode_TRANSPORT_ERROR
+                             userInfo:userInfo]];
             self.receivedData = nil;
             self.response = nil;
             return;
@@ -805,7 +815,8 @@
 - (void)oauthViewControllerDidCancel:(ENOAuthViewController *)sender
 {
     [self.viewController dismissViewControllerAnimated:YES completion:^{
-        [self completeAuthenticationWithError:nil];
+        NSError* error = [NSError errorWithDomain:EvernoteSDKErrorDomain code:EvernoteSDKErrorCode_USER_CANCELLED userInfo:nil];
+        [self completeAuthenticationWithError:error];
     }];
 }
 

@@ -75,6 +75,12 @@ const void *RACSchedulerCurrentSchedulerKey = &RACSchedulerCurrentSchedulerKey;
 	return [self schedulerWithPriority:RACSchedulerPriorityDefault];
 }
 
++ (instancetype)schedulerWithQueue:(dispatch_queue_t)queue name:(NSString *)name {
+	NSCParameterAssert(queue != NULL);
+
+	return [[RACQueueScheduler alloc] initWithName:name targetQueue:queue];
+}
+
 + (instancetype)subscriptionScheduler {
 	static dispatch_once_t onceToken;
 	static RACScheduler *subscriptionScheduler;
@@ -100,12 +106,12 @@ const void *RACSchedulerCurrentSchedulerKey = &RACSchedulerCurrentSchedulerKey;
 #pragma mark Scheduling
 
 - (RACDisposable *)schedule:(void (^)(void))block {
-	NSAssert(NO, @"-schedule: must be implemented by subclasses.");
+	NSCAssert(NO, @"-schedule: must be implemented by subclasses.");
 	return nil;
 }
 
 - (RACDisposable *)after:(dispatch_time_t)when schedule:(void (^)(void))block {
-	NSAssert(NO, @"-after:schedule: must be implemented by subclasses.");
+	NSCAssert(NO, @"-after:schedule: must be implemented by subclasses.");
 	return nil;
 }
 
@@ -117,20 +123,11 @@ const void *RACSchedulerCurrentSchedulerKey = &RACSchedulerCurrentSchedulerKey;
 - (RACDisposable *)scheduleRecursiveBlock:(RACSchedulerRecursiveBlock)recursiveBlock {
 	RACCompoundDisposable *disposable = [RACCompoundDisposable compoundDisposable];
 
-	__block volatile uint32_t disposed = 0;
-	BOOL (^isDisposed)(void) = [^{
-		return disposed != 0;
-	} copy];
-
-	[disposable addDisposable:[RACDisposable disposableWithBlock:^{
-		OSAtomicOr32Barrier(1, &disposed);
-	}]];
-
-	[self scheduleRecursiveBlock:[recursiveBlock copy] addingToDisposable:disposable isDisposedBlock:isDisposed];
+	[self scheduleRecursiveBlock:[recursiveBlock copy] addingToDisposable:disposable];
 	return disposable;
 }
 
-- (void)scheduleRecursiveBlock:(RACSchedulerRecursiveBlock)recursiveBlock addingToDisposable:(RACCompoundDisposable *)disposable isDisposedBlock:(BOOL (^)(void))isDisposed {
+- (void)scheduleRecursiveBlock:(RACSchedulerRecursiveBlock)recursiveBlock addingToDisposable:(RACCompoundDisposable *)disposable {
 	@autoreleasepool {
 		RACCompoundDisposable *selfDisposable = [RACCompoundDisposable compoundDisposable];
 		[disposable addDisposable:selfDisposable];
@@ -143,11 +140,11 @@ const void *RACSchedulerCurrentSchedulerKey = &RACSchedulerCurrentSchedulerKey;
 				[disposable removeDisposable:weakSelfDisposable];
 			}
 
-			if (isDisposed()) return;
+			if (disposable.disposed) return;
 
 			void (^reallyReschedule)(void) = ^{
-				if (isDisposed()) return;
-				[self scheduleRecursiveBlock:recursiveBlock addingToDisposable:disposable isDisposedBlock:isDisposed];
+				if (disposable.disposed) return;
+				[self scheduleRecursiveBlock:recursiveBlock addingToDisposable:disposable];
 			};
 
 			// Protects the variables below.

@@ -5,6 +5,11 @@
 
 #import "RACENAPI.h"
 
+@interface RACENAPI ()
+
+@property (nonatomic, strong) NSArray *errorDescriptions;
+
+@end
 
 @implementation RACENAPI
 {
@@ -16,6 +21,24 @@
     self = [super init];
     if (self) {
         self.session = session;
+        self.errorDescriptions = @[@"No information available about the error",
+                @"The format of the request data was incorrect",
+                @"Not permitted to perform action",
+                @"Unexpected problem with the service",
+                @"A required parameter/field was absent",
+                @"Operation denied due to data model limit",
+                @"Operation denied due to user storage limit",
+                @"Username and/or password incorrect",
+                @"Authentication token expired",
+                @"Change denied due to data model conflict",
+                @"Content of submitted note was malformed",
+                @"Service shard with account data is temporarily down",
+                @"Operation denied due to data model limit, where something such as a string length was too short",
+                @"Operation denied due to data model limit, where something such as a string length was too long",
+                @"Operation denied due to data model limit, where there were too few of something.",
+                @"Operation denied due to data model limit, where there were too many of something.",
+                @"Operation denied because it is currently unsupported.",
+                @"Operation denied because access to the corresponding object is prohibited in response to a take-down notice."];
     }
     return self;
 }
@@ -52,6 +75,14 @@
         }
 
         NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithDictionary:exception.userInfo];
+        if (errorCode >= EDAMErrorCode_UNKNOWN && errorCode <= EDAMErrorCode_UNSUPPORTED_OPERATION) {
+            // being defensive here
+            if (self.errorDescriptions && self.errorDescriptions.count >= EDAMErrorCode_UNSUPPORTED_OPERATION) {
+                if (userInfo[NSLocalizedDescriptionKey] == nil) {
+                    userInfo[NSLocalizedDescriptionKey] = self.errorDescriptions[errorCode - 1];
+                }
+            }
+        }
         if ([exception respondsToSelector:@selector(parameter)]) {
             NSString *parameter = [(id)exception parameter];
             if (parameter) {
