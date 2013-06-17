@@ -93,89 +93,85 @@
 
 - (RACSignal *)signalWithBoolBlock:(BOOL (^)())block
 {
-    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+    RACScheduler *scheduler= [RACScheduler currentScheduler]?:[RACScheduler scheduler];
+    return [RACSignal startWithScheduler:scheduler subjectBlock:^(RACSubject *subject) {
         dispatch_async(self.session.queue, ^(void) {
             __block BOOL retVal = NO;
             @try {
                 if (block) {
                     retVal = block();
                 }
-                [subscriber sendNext:@(retVal)];
-                [subscriber sendCompleted];
+                [subject sendNext:@(retVal)];
+                [subject sendCompleted];
             }
             @catch (NSException *exception) {
                 NSError *error = [self errorFromNSException:exception];
-                [self processError:error subscriber:subscriber];
+                [self processError:error subscriber:subject];
             }
         });
-
-        return [RACDisposable disposableWithBlock:nil];
     }];
 }
 
 - (RACSignal *)signalWithInt32Block:(int32_t (^)())block
 {
-    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+    RACScheduler *scheduler= [RACScheduler currentScheduler]?:[RACScheduler scheduler];
+    return [RACSignal startWithScheduler:scheduler subjectBlock:^(RACSubject *subject) {
         dispatch_async(self.session.queue, ^(void) {
             __block int32_t retVal = -1;
             @try {
                 if (block) {
                     retVal = block();
                 }
-                [subscriber sendNext:@(retVal)];
-                [subscriber sendCompleted];
+                [subject sendNext:@(retVal)];
+                [subject sendCompleted];
             }
             @catch (NSException *exception) {
                 NSError *error = [self errorFromNSException:exception];
-                [self processError:error subscriber:subscriber];
+                [self processError:error subscriber:subject];
             }
         });
-
-        return [RACDisposable disposableWithBlock:nil];
     }];
 }
 
 // use id instead of NSObject* so block type-checking is happy
 - (RACSignal *)signalWithIdBlock:(id (^)())block
 {
-    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+    RACScheduler *scheduler= [RACScheduler currentScheduler]?:[RACScheduler scheduler];
+    return [RACSignal startWithScheduler:scheduler subjectBlock:^(RACSubject *subject) {
         dispatch_async(self.session.queue, ^(void) {
             id retVal = nil;
             @try {
                 if (block) {
                     retVal = block();
                 }
-                [subscriber sendNext:retVal];
-                [subscriber sendCompleted];
+                [subject sendNext:retVal];
+                [subject sendCompleted];
             }
             @catch (NSException *exception) {
                 NSError *error = [self errorFromNSException:exception];
-                [self processError:error subscriber:subscriber];
+                [self processError:error subscriber:subject];
             }
         });
-
-        return [RACDisposable disposableWithBlock:nil];
     }];
 }
 
 - (RACSignal *)signalWithVoidBlock:(void (^)())block
 {
-    return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+    RACScheduler *scheduler= [RACScheduler currentScheduler]?:[RACScheduler scheduler];
+    return [RACSignal startWithScheduler:scheduler subjectBlock:^(RACSubject *subject) {
         dispatch_async(self.session.queue, ^(void) {
             @try {
                 if (block) {
                     block();
                 }
-                [subscriber sendNext:nil];
-                [subscriber sendCompleted];
+                [subject sendNext:nil];
+                [subject sendCompleted];
             }
             @catch (NSException *exception) {
                 NSError *error = [self errorFromNSException:exception];
-                [self processError:error subscriber:subscriber];
+                [self processError:error subscriber:subject];
             }
         });
-
-        return [RACDisposable disposableWithBlock:nil];
     }];
 }
 

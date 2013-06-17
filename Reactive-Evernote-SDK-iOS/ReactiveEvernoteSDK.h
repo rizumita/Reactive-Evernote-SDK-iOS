@@ -8,3 +8,4 @@
 
 #import "RACEvernoteUserStore.h"
 #import "RACEvernoteNoteStore.h"
+#import "EvernoteSession+RAC.h"

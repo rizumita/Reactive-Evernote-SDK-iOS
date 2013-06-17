@@ -23,7 +23,7 @@
             }
         }];
 
-        return [RACDisposable disposableWithBlock:nil];
+        return [RACDisposable disposableWithBlock:^{}];
     }];
 }
 
