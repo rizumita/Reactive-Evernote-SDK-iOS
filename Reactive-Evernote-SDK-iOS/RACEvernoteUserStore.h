@@ -1,12 +1,10 @@
 //
-// Created by rizumita on 2013/04/23.
+// Created by rizumita on 2014/02/03.
 //
 
 
 #import <Foundation/Foundation.h>
 #import "RACENAPI.h"
-
-@class RACSignal;
 
 
 @interface RACEvernoteUserStore : RACENAPI
@@ -22,7 +20,7 @@
 
  @param session The Evernote session object
  */
-- (id)initWithSession:(EvernoteSession *)session;
+- (id)initWithSession:(RACEvernoteSession *)session;
 
 ///---------------------------------------------------------------------------------------
 /// @name UserStore methods
@@ -36,8 +34,10 @@
 
  @param  edamVersionMajor This should be the major protocol version that was compiled by the client. This should be the current value of the EDAM_VERSION_MAJOR constant for the client.
  @param  edamVersionMinor This should be the major protocol version that was compiled by the client. This should be the current value of the EDAM_VERSION_MINOR constant for the client.
+
  */
-- (RACSignal *)checkVersionWithClientName:(NSString *)clientName edamVersionMajor:(int16_t)edamVersionMajor
+- (RACSignal *)checkVersionWithClientName:(NSString *)clientName
+                         edamVersionMajor:(int16_t)edamVersionMajor
                          edamVersionMinor:(int16_t)edamVersionMinor;
 
 /** This provides bootstrap information to the client.
@@ -45,6 +45,7 @@
  Various bootstrap profiles and settings may be used by the client to configure itself.
 
  @param  locale The client's current locale, expressed in language[_country] format. E.g., "en_US". See ISO-639 and ISO-3166 for valid language and country codes.
+
  */
 - (RACSignal *)getBootstrapInfoWithLocale:(NSString *)locale;
 
@@ -58,11 +59,11 @@
 /** Asks the UserStore about the publicly available location information for a particular username.
 
  @param username The username for the location information
+
  */
 - (RACSignal *)getPublicUserInfoWithUsername:(NSString *)username;
 
 /** Returns information regarding a user's Premium account corresponding to the provided authentication token, or throws an exception if this token is not valid.
-
  */
 - (RACSignal *)getPremiumInfo;
 
@@ -79,5 +80,12 @@
 
  */
 - (RACSignal *)authenticateToBusiness;
+
+/** Revoke an existing long lived authentication token. This can be used to revoke OAuth tokens or tokens created by calling authenticateLongSession, and allows a user to effectively log out of Evernote from the perspective of the application that holds the token. The authentication token that is passed is immediately revoked and may not be used to call any authenticated EDAM function.
+
+ @param authenticationToken the authentication token to revoke.
+
+ */
+- (RACSignal *)revokeLongSessionWithAuthenticationToken:(NSString *)authenticationToken;
 
 @end

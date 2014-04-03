@@ -9,9 +9,9 @@
 #import "RENViewController.h"
 #import "ReactiveCocoa.h"
 #import "EvernoteSDK.h"
-#import "EXTScope.h"
 #import "RACEvernoteNoteStore.h"
-#import "EvernoteSession+RAC.h"
+#import "RACEvernoteSession.h"
+#import "extobjc/RACEXTScope.h"
 
 @interface RENViewController ()
 
@@ -33,14 +33,14 @@
 
     [[self.logInButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self);
-        [EvernoteSession setSharedSessionHost:(self.sandboxSwitch.on ? BootstrapServerBaseURLStringSandbox : BootstrapServerBaseURLStringUS) consumerKey:self.consumerKeyTextField.text consumerSecret:self.consumerSecretTextField.text];
-        [[[EvernoteSession sharedSession] authenticateWithViewController:self] subscribeNext:^(id x) {
+        [RACEvernoteSession setSharedSessionHost:(self.sandboxSwitch.on ? BootstrapServerBaseURLStringSandbox : BootstrapServerBaseURLStringUS) consumerKey:self.consumerKeyTextField.text consumerSecret:self.consumerSecretTextField.text];
+        [[[RACEvernoteSession rac_sharedSession] authenticateWithViewController:self] subscribeNext:^(id x) {
 
         }];
     }];
 
     [[self.logOutButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        [[EvernoteSession sharedSession] logout];
+        [[RACEvernoteSession rac_sharedSession] logout];
     }];
 
     [[self.listNotebookButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
@@ -68,15 +68,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewDidUnload
-{
-    [self setListNotebookButton:nil];
-    [self setListTagsButton:nil];
-    [self setLogOutButton:nil];
-    [self setLogInButton:nil];
-    [super viewDidUnload];
 }
 
 @end

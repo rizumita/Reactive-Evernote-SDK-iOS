@@ -1,12 +1,10 @@
 //
-// Created by rizumita on 2013/04/23.
+// Created by rizumita on 2014/02/03.
 //
 
 
 #import "RACEvernoteUserStore.h"
-#import "RACSignal.h"
-#import "EXTScope.h"
-#import "EvernoteSession.h"
+#import "RACEvernoteSession.h"
 
 
 @implementation RACEvernoteUserStore
@@ -16,11 +14,11 @@
 
 + (instancetype)userStore
 {
-    RACEvernoteUserStore *userStore = [[RACEvernoteUserStore alloc] initWithSession:[EvernoteSession sharedSession]];
+    RACEvernoteUserStore *userStore = [[RACEvernoteUserStore alloc] initWithSession:[RACEvernoteSession sharedSession]];
     return userStore;
 }
 
-- (id)initWithSession:(EvernoteSession *)session
+- (id)initWithSession:(RACEvernoteSession *)session
 {
     self = [super initWithSession:session];
     if (self) {
@@ -33,64 +31,57 @@
 - (RACSignal *)checkVersionWithClientName:(NSString *)clientName edamVersionMajor:(int16_t)edamVersionMajor
                          edamVersionMinor:(int16_t)edamVersionMinor
 {
-    @weakify(self);
-    return [self signalWithBoolBlock:^BOOL {
-        @strongify(self);
+    return [self invokeAsyncBoolBlock:^BOOL{
         return [self.userStore checkVersion:clientName edamVersionMajor:edamVersionMajor edamVersionMinor:edamVersionMinor];
-    }];
+    } ];
 }
 
 - (RACSignal *)getBootstrapInfoWithLocale:(NSString *)locale
 {
-    @weakify(self);
-    return [self signalWithIdBlock:^id {
-        @strongify(self);
+    return [self invokeAsyncIdBlock:^id {
         return [self.userStore getBootstrapInfo:locale];
     }];
 }
 
 - (RACSignal *)getUser
 {
-    @weakify(self);
-    return [self signalWithIdBlock:^id {
-        @strongify(self);
-        return [self.userStore getUser:[[EvernoteSession sharedSession] authenticationToken]];
+    return [self invokeAsyncIdBlock:^id {
+        return [self.userStore getUser:[[RACEvernoteSession sharedSession] authenticationToken]];
     }];
 }
 
 - (RACSignal *)getPublicUserInfoWithUsername:(NSString *)username
 {
-    @weakify(self);
-    return [self signalWithIdBlock:^id {
-        @strongify(self);
+    return [self invokeAsyncIdBlock:^id {
         return [self.userStore getPublicUserInfo:username];
     }];
 }
 
 - (RACSignal *)getPremiumInfo
 {
-    @weakify(self);
-    return [self signalWithIdBlock:^id {
-        @strongify(self);
-        return [self.userStore getPremiumInfo:[[EvernoteSession sharedSession] authenticationToken]];
+    return [self invokeAsyncIdBlock:^id {
+        return [self.userStore getPremiumInfo:[[RACEvernoteSession sharedSession] authenticationToken]];
     }];
 }
 
 - (RACSignal *)getNoteStoreUrl
 {
-    @weakify(self);
-    return [self signalWithIdBlock:^id {
-        @strongify(self);
-        return [self.userStore getNoteStoreUrl:[[EvernoteSession sharedSession] authenticationToken]];
+    return [self invokeAsyncIdBlock:^id {
+        return [self.userStore getNoteStoreUrl:[[RACEvernoteSession sharedSession] authenticationToken]];
     }];
 }
 
 - (RACSignal *)authenticateToBusiness
 {
-    @weakify(self);
-    return [self signalWithIdBlock:^id {
-        @strongify(self);
-        return [self.userStore authenticateToBusiness:[[EvernoteSession sharedSession] authenticationToken]];
+    return [self invokeAsyncIdBlock:^id {
+        return [self.userStore authenticateToBusiness:[[RACEvernoteSession sharedSession] authenticationToken]];
+    }];
+}
+
+- (RACSignal *)revokeLongSessionWithAuthenticationToken:(NSString *)authenticationToken
+{
+    return [self invokeAsyncVoidBlock:^void {
+        [self.userStore revokeLongSession:authenticationToken];
     }];
 }
 

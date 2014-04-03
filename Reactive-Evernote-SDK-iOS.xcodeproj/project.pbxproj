@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AA29CCC1725DBAA000F7E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29CCB1725DBAA000F7E8F /* Foundation.framework */; };
-		6AA29CD11725DBAA000F7E8F /* ReactiveEvernoteSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6AA29CD01725DBAA000F7E8F /* ReactiveEvernoteSDK.h */; };
+		6A1EA7EB18EE265100AC9852 /* RACEvernoteNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876C26AF5683DA9D53079A /* RACEvernoteNoteStore.m */; };
+		6A1EA7EE18EE265900AC9852 /* RACENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876B80913B1BA1D350100C /* RACENAPI.m */; };
+		6A1EA7EF18EE265900AC9852 /* RACEvernoteSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A90CA4018EE1C330087352B /* RACEvernoteSession.m */; };
+		6A1EA7F018EE265900AC9852 /* RACEvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876D9DBA477D495303F1D2 /* RACEvernoteUserStore.m */; };
 		6AA29CF817261775000F7E8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29CDC1725DBAA000F7E8F /* UIKit.framework */; };
 		6AA29CF917261775000F7E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29CCB1725DBAA000F7E8F /* Foundation.framework */; };
 		6AA29CFB17261775000F7E8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29CFA17261775000F7E8F /* CoreGraphics.framework */; };
@@ -20,42 +22,15 @@
 		6AA29D0D17261775000F7E8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA29D0C17261775000F7E8F /* Default-568h@2x.png */; };
 		6AA29D1017261775000F7E8F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA29D0E17261775000F7E8F /* MainStoryboard.storyboard */; };
 		6AA29D1317261775000F7E8F /* RENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA29D1217261775000F7E8F /* RENViewController.m */; };
-		6AA29D1C17261D0E000F7E8F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29D1B17261D0E000F7E8F /* StoreKit.framework */; };
 		6AA29D1D17261D22000F7E8F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29D1B17261D0E000F7E8F /* StoreKit.framework */; };
 		6AA29D1F17261D2E000F7E8F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29D1E17261D2E000F7E8F /* Security.framework */; };
-		6AA29D2017261D3F000F7E8F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29D1E17261D2E000F7E8F /* Security.framework */; };
-		6AA29D2917262384000F7E8F /* libReactive-Evernote-SDK-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA29CC81725DBAA000F7E8F /* libReactive-Evernote-SDK-iOS.a */; };
-		CB876040B128B36EBA8022A5 /* RACEvernoteNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876C26AF5683DA9D53079A /* RACEvernoteNoteStore.m */; };
-		CB8761ED639DFDD9011FC3EC /* EvernoteSession+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876327A8EC55D5AAB62C27 /* EvernoteSession+RAC.m */; };
-		CB8765079F6834C46D223641 /* RACEvernoteUserStore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB87666A0274B3DB9C4012BE /* RACEvernoteUserStore.h */; };
-		CB8765B9548AA80FC0359090 /* RACEvernoteNoteStore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB876943714FACBE0CFDA001 /* RACEvernoteNoteStore.h */; };
-		CB8768274BCB5DC1EF4C451E /* RACENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876B80913B1BA1D350100C /* RACENAPI.m */; };
-		CB87696F230BCAB441879368 /* RACENAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB8766C245D55A91AA5A44D0 /* RACENAPI.h */; };
-		CB8769B6466EAF7A055ACEB3 /* EvernoteSession+RAC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB87601BD0B789874BBB2192 /* EvernoteSession+RAC.h */; };
-		CB876B73B215D1E4594835C5 /* RACEvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CB876D9DBA477D495303F1D2 /* RACEvernoteUserStore.m */; };
-		DDE66BAD90374D19A259388D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D508D1A0A4854BA385BA865E /* libPods.a */; };
+		E8D8CD72A2F5405295826C92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D508D1A0A4854BA385BA865E /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		6AA29CC61725DBAA000F7E8F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				6AA29CD11725DBAA000F7E8F /* ReactiveEvernoteSDK.h in CopyFiles */,
-				CB8765B9548AA80FC0359090 /* RACEvernoteNoteStore.h in CopyFiles */,
-				CB87696F230BCAB441879368 /* RACENAPI.h in CopyFiles */,
-				CB8765079F6834C46D223641 /* RACEvernoteUserStore.h in CopyFiles */,
-				CB8769B6466EAF7A055ACEB3 /* EvernoteSession+RAC.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14A601E084C447A2AB1F5422 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		6AA29CC81725DBAA000F7E8F /* libReactive-Evernote-SDK-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libReactive-Evernote-SDK-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A90CA3F18EE1C330087352B /* RACEvernoteSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEvernoteSession.h; sourceTree = "<group>"; };
+		6A90CA4018EE1C330087352B /* RACEvernoteSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACEvernoteSession.m; sourceTree = "<group>"; };
 		6AA29CCB1725DBAA000F7E8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AA29CCF1725DBAA000F7E8F /* Reactive-Evernote-SDK-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reactive-Evernote-SDK-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		6AA29CD01725DBAA000F7E8F /* ReactiveEvernoteSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveEvernoteSDK.h; sourceTree = "<group>"; };
@@ -78,39 +53,29 @@
 		6AA29D1B17261D0E000F7E8F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6AA29D1E17261D2E000F7E8F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6AA29D2317261F89000F7E8F /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
-		CB87601BD0B789874BBB2192 /* EvernoteSession+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EvernoteSession+RAC.h"; sourceTree = "<group>"; };
-		CB876327A8EC55D5AAB62C27 /* EvernoteSession+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EvernoteSession+RAC.m"; sourceTree = "<group>"; };
+		B5D935B1C9A6473EB4C12FE6 /* libPods-Reactive-Evernote-SDK-iOS-Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reactive-Evernote-SDK-iOS-Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB87666A0274B3DB9C4012BE /* RACEvernoteUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEvernoteUserStore.h; sourceTree = "<group>"; };
 		CB8766C245D55A91AA5A44D0 /* RACENAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACENAPI.h; sourceTree = "<group>"; };
 		CB876943714FACBE0CFDA001 /* RACEvernoteNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEvernoteNoteStore.h; sourceTree = "<group>"; };
 		CB876B80913B1BA1D350100C /* RACENAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACENAPI.m; sourceTree = "<group>"; };
 		CB876C26AF5683DA9D53079A /* RACEvernoteNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACEvernoteNoteStore.m; sourceTree = "<group>"; };
 		CB876D9DBA477D495303F1D2 /* RACEvernoteUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACEvernoteUserStore.m; sourceTree = "<group>"; };
+		CB876F437B2407A925C70F7E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D508D1A0A4854BA385BA865E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA4284B9249416DA3D0411F /* Pods-Reactive-Evernote-SDK-iOS-Sample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactive-Evernote-SDK-iOS-Sample.xcconfig"; path = "Pods/Pods-Reactive-Evernote-SDK-iOS-Sample.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6AA29CC51725DBAA000F7E8F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AA29D2017261D3F000F7E8F /* Security.framework in Frameworks */,
-				6AA29D1C17261D0E000F7E8F /* StoreKit.framework in Frameworks */,
-				6AA29CCC1725DBAA000F7E8F /* Foundation.framework in Frameworks */,
-				DDE66BAD90374D19A259388D /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6AA29CF417261775000F7E8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA29D2917262384000F7E8F /* libReactive-Evernote-SDK-iOS.a in Frameworks */,
 				6AA29D1F17261D2E000F7E8F /* Security.framework in Frameworks */,
 				6AA29D1D17261D22000F7E8F /* StoreKit.framework in Frameworks */,
 				6AA29CF817261775000F7E8F /* UIKit.framework in Frameworks */,
 				6AA29CF917261775000F7E8F /* Foundation.framework in Frameworks */,
 				6AA29CFB17261775000F7E8F /* CoreGraphics.framework in Frameworks */,
+				E8D8CD72A2F5405295826C92 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,13 +91,14 @@
 				6AA29CCA1725DBAA000F7E8F /* Frameworks */,
 				6AA29CC91725DBAA000F7E8F /* Products */,
 				14A601E084C447A2AB1F5422 /* Pods.xcconfig */,
+				CB876F437B2407A925C70F7E /* Podfile */,
+				DFA4284B9249416DA3D0411F /* Pods-Reactive-Evernote-SDK-iOS-Sample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		6AA29CC91725DBAA000F7E8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AA29CC81725DBAA000F7E8F /* libReactive-Evernote-SDK-iOS.a */,
 				6AA29CF717261775000F7E8F /* Reactive-Evernote-SDK-iOS-Sample.app */,
 			);
 			name = Products;
@@ -148,6 +114,7 @@
 				6AA29CDC1725DBAA000F7E8F /* UIKit.framework */,
 				D508D1A0A4854BA385BA865E /* libPods.a */,
 				6AA29CFA17261775000F7E8F /* CoreGraphics.framework */,
+				B5D935B1C9A6473EB4C12FE6 /* libPods-Reactive-Evernote-SDK-iOS-Sample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,10 +128,10 @@
 				CB876943714FACBE0CFDA001 /* RACEvernoteNoteStore.h */,
 				CB876B80913B1BA1D350100C /* RACENAPI.m */,
 				CB8766C245D55A91AA5A44D0 /* RACENAPI.h */,
+				6A90CA3F18EE1C330087352B /* RACEvernoteSession.h */,
+				6A90CA4018EE1C330087352B /* RACEvernoteSession.m */,
 				CB876D9DBA477D495303F1D2 /* RACEvernoteUserStore.m */,
 				CB87666A0274B3DB9C4012BE /* RACEvernoteUserStore.h */,
-				CB876327A8EC55D5AAB62C27 /* EvernoteSession+RAC.m */,
-				CB87601BD0B789874BBB2192 /* EvernoteSession+RAC.h */,
 			);
 			path = "Reactive-Evernote-SDK-iOS";
 			sourceTree = "<group>";
@@ -207,34 +174,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AA29CC71725DBAA000F7E8F /* Reactive-Evernote-SDK-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6AA29CED1725DBAA000F7E8F /* Build configuration list for PBXNativeTarget "Reactive-Evernote-SDK-iOS" */;
-			buildPhases = (
-				6A069B8022C1471C90C9728D /* Check Pods Manifest.lock */,
-				6AA29CC41725DBAA000F7E8F /* Sources */,
-				6AA29CC51725DBAA000F7E8F /* Frameworks */,
-				6AA29CC61725DBAA000F7E8F /* CopyFiles */,
-				A38DCA9232F14B77AFC86416 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Reactive-Evernote-SDK-iOS";
-			productName = "Reactive-Evernote-SDK-iOS";
-			productReference = 6AA29CC81725DBAA000F7E8F /* libReactive-Evernote-SDK-iOS.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		6AA29CF617261775000F7E8F /* Reactive-Evernote-SDK-iOS-Sample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA29D1617261775000F7E8F /* Build configuration list for PBXNativeTarget "Reactive-Evernote-SDK-iOS-Sample" */;
 			buildPhases = (
+				0905A4FA1CEA46838095F13E /* Check Pods Manifest.lock */,
 				6AA29D281726207A000F7E8F /* ShellScript */,
 				6AA29CF317261775000F7E8F /* Sources */,
 				6AA29CF417261775000F7E8F /* Frameworks */,
 				6AA29CF517261775000F7E8F /* Resources */,
 				6AA29D2617262055000F7E8F /* ShellScript */,
+				A9B7559D740E4364A4E19F85 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,7 +216,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AA29CC71725DBAA000F7E8F /* Reactive-Evernote-SDK-iOS */,
 				6AA29CF617261775000F7E8F /* Reactive-Evernote-SDK-iOS-Sample */,
 			);
 		};
@@ -288,7 +237,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6A069B8022C1471C90C9728D /* Check Pods Manifest.lock */ = {
+		0905A4FA1CEA46838095F13E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,7 +249,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		6AA29D2617262055000F7E8F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -328,7 +278,7 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\ncat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\nexit 1\nfi\n";
 		};
-		A38DCA9232F14B77AFC86416 /* Copy Pods Resources */ = {
+		A9B7559D740E4364A4E19F85 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,28 +291,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6AA29CC41725DBAA000F7E8F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB876040B128B36EBA8022A5 /* RACEvernoteNoteStore.m in Sources */,
-				CB8768274BCB5DC1EF4C451E /* RACENAPI.m in Sources */,
-				CB876B73B215D1E4594835C5 /* RACEvernoteUserStore.m in Sources */,
-				CB8761ED639DFDD9011FC3EC /* EvernoteSession+RAC.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6AA29CF317261775000F7E8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6AA29D0317261775000F7E8F /* main.m in Sources */,
+				6A1EA7EB18EE265100AC9852 /* RACEvernoteNoteStore.m in Sources */,
 				6AA29D0717261775000F7E8F /* RENAppDelegate.m in Sources */,
 				6AA29D1317261775000F7E8F /* RENViewController.m in Sources */,
+				6A1EA7F018EE265900AC9852 /* RACEvernoteUserStore.m in Sources */,
+				6A1EA7EE18EE265900AC9852 /* RACENAPI.m in Sources */,
+				6A1EA7EF18EE265900AC9852 /* RACEvernoteSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,42 +385,9 @@
 			};
 			name = Release;
 		};
-		6AA29CEE1725DBAA000F7E8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A601E084C447A2AB1F5422 /* Pods.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/Reactive_Evernote_SDK_iOS.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reactive-Evernote-SDK-iOS/Reactive-Evernote-SDK-iOS-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
-			};
-			name = Debug;
-		};
-		6AA29CEF1725DBAA000F7E8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A601E084C447A2AB1F5422 /* Pods.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/Reactive_Evernote_SDK_iOS.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Reactive-Evernote-SDK-iOS/Reactive-Evernote-SDK-iOS-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
-			};
-			name = Release;
-		};
 		6AA29D1417261775000F7E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A601E084C447A2AB1F5422 /* Pods.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -487,21 +398,21 @@
 				GCC_PREFIX_HEADER = "Reactive-Evernote-SDK-iOS-Sample/Reactive-Evernote-SDK-iOS-Sample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "Reactive-Evernote-SDK-iOS-Sample/Reactive-Evernote-SDK-iOS-Sample-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/Evernote-SDK-iOS\" \"${PODS_ROOT}/BuildHeaders/JRSwizzle\" \"${PODS_ROOT}/BuildHeaders/ReactiveCocoa\" \"${PODS_ROOT}/BuildHeaders/ReactiveCocoa/ReactiveCocoa\" \"${PODS_ROOT}/BuildHeaders/SSKeychain\" \"${PODS_ROOT}/BuildHeaders/libextobjc\"";
 				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/Evernote-SDK-iOS\" \"${PODS_ROOT}/Headers/JRSwizzle\" \"${PODS_ROOT}/Headers/ReactiveCocoa\" \"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\" \"${PODS_ROOT}/Headers/SSKeychain\" \"${PODS_ROOT}/Headers/libextobjc\"";
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		6AA29D1517261775000F7E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A601E084C447A2AB1F5422 /* Pods.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -512,16 +423,15 @@
 				GCC_PREFIX_HEADER = "Reactive-Evernote-SDK-iOS-Sample/Reactive-Evernote-SDK-iOS-Sample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "Reactive-Evernote-SDK-iOS-Sample/Reactive-Evernote-SDK-iOS-Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/Evernote-SDK-iOS\" \"${PODS_ROOT}/BuildHeaders/JRSwizzle\" \"${PODS_ROOT}/BuildHeaders/ReactiveCocoa\" \"${PODS_ROOT}/BuildHeaders/ReactiveCocoa/ReactiveCocoa\" \"${PODS_ROOT}/BuildHeaders/SSKeychain\" \"${PODS_ROOT}/BuildHeaders/libextobjc\"";
 				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/Evernote-SDK-iOS\" \"${PODS_ROOT}/Headers/JRSwizzle\" \"${PODS_ROOT}/Headers/ReactiveCocoa\" \"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\" \"${PODS_ROOT}/Headers/SSKeychain\" \"${PODS_ROOT}/Headers/libextobjc\"";
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -534,15 +444,6 @@
 			buildConfigurations = (
 				6AA29CEB1725DBAA000F7E8F /* Debug */,
 				6AA29CEC1725DBAA000F7E8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6AA29CED1725DBAA000F7E8F /* Build configuration list for PBXNativeTarget "Reactive-Evernote-SDK-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6AA29CEE1725DBAA000F7E8F /* Debug */,
-				6AA29CEF1725DBAA000F7E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

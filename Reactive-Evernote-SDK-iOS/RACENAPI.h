@@ -1,31 +1,35 @@
 //
-// Created by rizumita on 2013/04/23.
+// Created by rizumita on 2014/02/03.
 //
 
 
 #import <Foundation/Foundation.h>
-#import "EDAM.h"
-#import "EvernoteSDK.h"
-#import "ReactiveCocoa.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <evernote-sdk-ios/EvernoteSDK.h>
+
+
+@class RACEvernoteSession;
+
 
 @interface RACENAPI : NSObject
 
-@property (nonatomic, strong) EvernoteSession *session;
-@property (strong, nonatomic) EDAMNoteStoreClient *noteStore;
+@property (nonatomic, strong) RACEvernoteSession *session;
+@property (weak, nonatomic, readonly) EDAMNoteStoreClient *noteStore;
 @property (weak, nonatomic, readonly) EDAMUserStoreClient *userStore;
 @property (weak, nonatomic, readonly) EDAMNoteStoreClient *businessNoteStore;
 
-- (id)initWithSession:(EvernoteSession *)session;
+- (id)initWithSession:(RACEvernoteSession *)session;
 
 // Make an NSError from a given NSException.
 - (NSError *)errorFromNSException:(NSException *)exception;
 
-- (RACSignal *)signalWithBoolBlock:(BOOL (^)())block;
+// asynchronously invoke the given blocks,
+// calling back to success/failure on the main threa.
+- (RACSignal *)invokeAsyncBoolBlock:(BOOL(^)())block;
 
-- (RACSignal *)signalWithIdBlock:(id (^)())block;
+- (RACSignal *)invokeAsyncInt32Block:(int32_t(^)())block;
 
-- (RACSignal *)signalWithInt32Block:(int32_t (^)())block;
+- (RACSignal *)invokeAsyncIdBlock:(id(^)())block;
 
-- (RACSignal *)signalWithVoidBlock:(void (^)())block;
-
+- (RACSignal *)invokeAsyncVoidBlock:(void (^)())block;
 @end
