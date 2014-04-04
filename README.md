@@ -6,15 +6,17 @@ Evernote SDK iOS with ReactiveCocoa
 Sample
 ===============
 ```OBjective-C
-[[[RACEvernoteNoteStore noteStore] listNotebooks] subscribeNext:^(NSArray *notebooks) {
-    NSLog(@"%@", notebooks);
-}                                                         error:^(NSError *error) {
-    NSLog(@"error: %@", error);
-}                                                     completed:^{
-    NSLog(@"completed");
+[RACEvernoteSession setSharedSessionHost:BootstrapServerBaseURLStringUS consumerKey:consumerKey consumerSecret:consumerSecret];
+[[[RACEvernoteSession rac_sharedSession] authenticateWithViewController:self] subscribeNext:^(id x) {
+    [[[RACEvernoteNoteStore noteStore] listNotebooks] subscribeNext:^(NSArray *notebooks) {
+        NSLog(@"%@", notebooks);
+    }                                                         error:^(NSError *error) {
+        NSLog(@"error: %@", error);
+    }                                                     completed:^{
+        NSLog(@"completed");
+    }];
 }];
 ```
-
 
 License
 ===============
